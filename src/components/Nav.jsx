@@ -26,15 +26,6 @@ function Nav() {
     const navContaienrRef = useRef(null);
     const closeRef = useRef(null);
     const openRef = useRef(null);
-
-    // useEffect(() => {
-    //     if (showMenu) {
-    //         navContaienrRef.current.classList.add("show");
-    //     }
-    //     if (!showMenu) {
-    //         navContaienrRef.current.classList.remove("show");
-    //     }
-    // }, [showMenu]);
     const toggleMenu = () => {
         const menuContentRef = navContaienrRef.current.children[1];
         menuContentRef.classList.toggle("active");
@@ -118,9 +109,6 @@ function Nav() {
                 </div>
             </nav>
             {showMenu && (
-                // <button className="btn" onClick={toggleMenu} ref={openRef}>
-                //     close
-                // </button>
 
                 <div className="btn close" onClick={toggleMenu} ref={openRef}>
                     <Icon className="btn" name="close-circle-fill" />

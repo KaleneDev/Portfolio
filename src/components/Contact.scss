@@ -11,6 +11,9 @@ aside {
     box-shadow: var(--shadow-sm);
     h2 {
         margin: 0;
+        text-align: center;
+        max-width: 20ch;
+        font-weight: 700;
     }
     a {
         display: flex;
@@ -19,16 +22,19 @@ aside {
         text-align: center;
         padding: 0.56rem 2rem;
         border-radius: 999rem;
-        background-color: red;
         text-decoration: none;
         font-family: var(--font-public-sans);
-        gap: 0.8rem;
         color: var(--accent-text-over);
         font-size: var(--text-lg);
         box-shadow: var(--shadow-md);
         background: var(--gradient-accent-orange);
         line-height: 1.1;
-        width: 100%;
-        max-width: 200px;
+        gap: 0.8rem;
+        max-width: 300px;
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--accent-text-over);
+        }
     }
 }

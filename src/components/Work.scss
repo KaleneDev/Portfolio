@@ -71,6 +71,9 @@ main {
                     object-fit: cover;
                 }
             }
+            &:hover .card {
+                box-shadow: var(--shadow-md);
+            }
         }
     }
     .button-view-all {

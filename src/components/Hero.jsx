@@ -20,6 +20,8 @@ function Hero() {
                 <div>Express</div>
                 <div>SQL</div>
                 <div>Git</div>
+                <div>Redux</div>
+                <div>Sass</div>
                 <div>...</div>
             </div>
         </header>
