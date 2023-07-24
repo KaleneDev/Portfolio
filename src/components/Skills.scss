@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid var(--gray-700);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-sm);
+    .stack {
+        h2 {
+            margin: 0;
+            font-size: var(--text-xl);
+        }
+        p {
+            color: var(--gray-400);
+            margin: 0;
+        }
+    }
+}

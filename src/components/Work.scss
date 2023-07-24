@@ -1,0 +1,100 @@
+main {
+    padding: 0 1.5rem;
+}
+.section {
+    &::before {
+        --hero-bg: var(--bg-image-subtle-2);
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        left: 50%;
+        width: calc(100vw);
+        aspect-ratio: calc(2.25 / var(--bg-scale));
+        transform: translateY(-75%) translateX(-50%);
+        background: url(../assets/backgrounds/noise.png) top center/220px repeat,
+            var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+            var(--gray-999);
+        background-blend-mode: overlay, normal, normal, normal;
+        mix-blend-mode: var(--bg-blend-mode);
+        z-index: -1;
+    }
+    .section-header {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            margin: 0;
+            font-size: var(--text-2xl);
+        }
+        p {
+            margin: 0;
+            text-align: center;
+            max-width: 56ch;
+            color: var(--gray-400);
+            font-size: var(--text-md);
+        }
+    }
+    .grid {
+        display: grid;
+        padding: 0;
+        gap: 1rem;
+        li {
+            list-style: none;
+            .card {
+                position: relative;
+                height: 11rem;
+                display: flex;
+                text-decoration: none;
+                border-radius: 0.75rem;
+                border: 1px solid var(--gray-800);
+                overflow: hidden;
+                box-shadow: var(--shadow-sm);
+                font-family: var(--font-brand);
+                font-size: var(--text-lg);
+                font-weight: 500;
+                transition: box-shadow var(--theme-transition);
+                position: relative;
+                .title {
+                    background-color: var(--gray-999);
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    margin: 0;
+                    top: 0.5rem;
+                    left: 0.5rem;
+                    position: absolute;
+                    color: var(--gray-200);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .button-view-all {
+        width: 100%;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0.56rem 2rem;
+            border-radius: 999rem;
+            background-color: red;
+            text-decoration: none;
+            font-family: var(--font-public-sans);
+            gap: 0.8rem;
+            color: var(--accent-text-over);
+            font-size: var(--text-lg);
+            box-shadow: var(--shadow-md);
+            background: var(--gradient-accent-orange);
+            line-height: 1.1;
+            svg {
+                fill: var(--gray-999);
+                width: 1.5em;
+            }
+        }
+    }
+}

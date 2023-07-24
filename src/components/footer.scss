@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    .group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        li {
+            list-style: none;
+            a {
+                color: var(--gray-400);
+                text-underline-offset: 0.25em;
+                text-decoration: 1px solid underline transparent;
+                transition: text-decoration-color 0.2s ease-in-out;
+            }
+            a:hover {
+                text-decoration-color: var(--gray-400);
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+}

@@ -5,17 +5,16 @@ import { Helmet } from "react-helmet";
 function BaseLayout(props) {
     const { title, description, children } = props;
 
+    useEffect(() => {
+        document.title = title;
+        document.description = description;
+    }, [title, description]);
     return (
-        <div className="">
-            <Helmet>
-                <title>{title}</title>
-                <meta name="description" content={description} />
-            </Helmet>
-
+        <>
             <Nav />
             {children}
             <Footer />
-        </div>
+        </>
     );
 }
 
