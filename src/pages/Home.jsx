@@ -10,17 +10,13 @@ function Home() {
             title="Kalène A PIOU: Site Personel"
             description="Mon Portfolio"
         >
-            <div className="stack gap-20 lg:48">
-                <div className="wrapper stack gap-8">
+            <div className="stack gap-20 lg:gap-48">
+                <div className="wrapper stack gap-8 lg:gap-30">
                     <Hero />
                     <Skills />
                 </div>
-                <main className="wrapper">
-                    <Work />
-                </main>
-                <aside>
-                    <Contact />
-                </aside>
+                <Work />
+                <Contact />
             </div>
         </BaseLayout>
     );

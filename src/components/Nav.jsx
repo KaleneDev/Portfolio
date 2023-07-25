@@ -1,4 +1,5 @@
 import { React, useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Icon from "./IconT.jsx";
 import "./Nav.scss";
@@ -27,12 +28,88 @@ function Nav() {
     const navContaienrRef = useRef(null);
     const closeRef = useRef(null);
     const openRef = useRef(null);
-    const [showNav, setShowNav] = useState(false);
     const toggleMenu = () => {
         const menuContentRef = navContaienrRef.current.children[1];
         menuContentRef.classList.toggle("active");
         setShowMenu(!showMenu);
     };
+    const location = useLocation();
+    useEffect(() => {
+        const currentURL = location.pathname;
+        const navItems = document.querySelector(".nav-items");
+        const navItemsChild = navItems.childNodes;
+        navItemsChild.forEach((item) => item.classList.remove("activeDesktop"));
+
+        if (currentURL === "/") {
+        console.log(currentURL);
+
+            const navItems = document.querySelector(".nav-items");
+            const navItemsChild = navItems.childNodes;
+            navItemsChild[0].classList.add("activeDesktop");
+
+            const width = navItemsChild[0].clientWidth;
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--width",
+                `${width}px`
+            );
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--translateX",
+                `0px`
+            );
+        }
+
+        if (currentURL === "/work") {
+            const navItems = document.querySelector(".nav-items");
+            const navItemsChild = navItems.childNodes;
+            navItemsChild[1].classList.add("activeDesktop");
+
+            const width = navItemsChild[1].clientWidth;
+            const prevWidth = navItemsChild[0].clientWidth;
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--width",
+                `${width}px`
+            );
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--translateX",
+                `${prevWidth + 16}px`
+            );
+        }
+
+        if (currentURL === "/about") {
+            const navItems = document.querySelector(".nav-items");
+            const navItemsChild = navItems.childNodes;
+            navItemsChild[2].classList.add("activeDesktop");
+            const width = navItemsChild[2].clientWidth;
+            const prevWidth = navItemsChild[0].clientWidth;
+            const prevWidth2 = navItemsChild[1].clientWidth;
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--width",
+                `${width}px`
+            );
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--translateX",
+                `${prevWidth + prevWidth2 + 32}px`
+            );
+        }
+        if (currentURL === "/contact") {
+            const navItems = document.querySelector(".nav-items");
+            const navItemsChild = navItems.childNodes;
+            console.log(navItemsChild);
+            navItemsChild[3].classList.add("activeDesktop");
+            const width = navItemsChild[3].clientWidth;
+            const prevWidth = navItemsChild[0].clientWidth;
+            const prevWidth2 = navItemsChild[1].clientWidth;
+            const prevWidth3 = navItemsChild[2].clientWidth;
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--width",
+                `${width}px`
+            );
+            navItemsChild[0].childNodes[0].style.setProperty(
+                "--translateX",
+                `${prevWidth + prevWidth2 + prevWidth3 + 32 + 16}px`
+            );
+        }
+    }, [location]);
 
     return (
         <>
@@ -47,30 +124,28 @@ function Nav() {
                     <ul className="nav-items">
                         <li>
                             <Link className="link" to="/">
-                                Accueil
+                                <span>Accueil</span>
                             </Link>
                         </li>
                         <li>
                             <Link className="link" to="/work">
-                                Travaux
+                                <span>Travaux</span>
                             </Link>
                         </li>
                         <li>
                             <Link className="link" to="/about">
-                                À propos
+                                <span>À propos</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/contact">
+                                <span>Contact</span>
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div className="menu-footer">
-                    <div className="socials">
-                        {iconLinks.map(({ href, icon, label }, i) => (
-                            <a key={i} className="social" href={href}>
-                                <span>{label}</span>
-                                <Icon name={icon} />
-                            </a>
-                        ))}
-                    </div>
+          
 
                     <ThemeToggle />
                 </div>
@@ -98,6 +173,11 @@ function Nav() {
                         <li>
                             <Link className="link" to="/about">
                                 À propos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/contact">
+                                <span>Contact</span>
                             </Link>
                         </li>
                     </ul>

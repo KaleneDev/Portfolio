@@ -1,0 +1,16 @@
+@media (min-width: 800px) {
+    .section.pageWork {
+        grid-template-areas: none !important;
+        display: flex;
+        flex-direction: column;
+        
+        .gallery {
+            grid-area: none;
+            .grid {
+            }
+        }
+        .section-header {
+            grid-area: none;
+        }
+    }
+}

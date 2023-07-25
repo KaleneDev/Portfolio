@@ -1,7 +1,7 @@
 main {
     padding: 0 1.5rem;
 }
-.section {
+.section.work {
     &::before {
         --hero-bg: var(--bg-image-subtle-2);
         content: "";
@@ -103,7 +103,7 @@ main {
 }
 
 @media (min-width: 800px) {
-    .section {
+    .section.work {
         display: grid;
         // grid-template-columns: repeat(4, 1fr);
 

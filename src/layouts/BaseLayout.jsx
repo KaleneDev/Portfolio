@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import { Helmet } from "react-helmet";
 function BaseLayout(props) {
     const { title, description, children } = props;
 
@@ -11,7 +10,7 @@ function BaseLayout(props) {
     }, [title, description]);
     return (
         <>
-            <Nav />
+            {/* <Nav /> */}
             {children}
             <Footer />
         </>

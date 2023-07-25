@@ -8,7 +8,7 @@ import project4 from "../assets/project/stock-4.jpg";
 import Icon from "./IconT.jsx";
 function work() {
     return (
-        <section className="section">
+        <section className="wrapper section work">
             <header className="section-header stack">
                 <h3>Projet selectionné</h3>
                 <p>

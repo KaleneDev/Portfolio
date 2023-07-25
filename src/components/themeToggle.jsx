@@ -28,6 +28,8 @@ function themeToggle() {
     };
     const selectedTheme = localStorage.getItem("theme");
     useEffect(() => {
+       
+
         if (selectedTheme) {
             const root = document.documentElement;
             root.setAttribute("data-theme", selectedTheme);
@@ -53,7 +55,7 @@ function themeToggle() {
         <div className="theme-toggle">
             <button
                 onClick={(e) => toggleTheme(e)}
-                aria-pressed="false"
+                aria-pressed="true"
                 ref={buttonRef}
             >
                 <span className="sr-only">Dark theme</span>

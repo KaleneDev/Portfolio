@@ -49,8 +49,31 @@
     }
     &.desktop {
         display: none;
+ 
         .nav-items {
             box-shadow: var(--shadow-md);
+            li.activeDesktop {
+                .link {
+                    span {
+                        z-index: 100;
+                        color: var(--accent-text-over);
+                    }
+                }
+            }
+            li:nth-child(1) {
+                position: relative;
+                .link::before {
+                    transition: transform 0.2s ease-in-out;
+                    transform: translateX(var(--translateX));
+                    content: "";
+                    z-index: 1;
+                    position: absolute;
+                    inset: 0;
+                    background-color: var(--accent-regular);
+                    border-radius: 999rem;
+                    width: var(--width);
+                }
+            }
         }
     }
     margin-bottom: 3.5rem;
@@ -81,6 +104,8 @@
         justify-content: center;
         align-items: center;
         .nav-items {
+            position: relative;
+
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -88,14 +113,8 @@
             margin: 0;
             background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
             border-radius: 99rem;
-            padding: 0.5rem 0.5625rem;
-            li.active {
-                .link {
-                    border-radius: 999rem;
-                    background-color: var(--accent-regular);
-                    color: var(--gray-999);
-                }
-            }
+            padding: 0.5rem 0.5rem;
+  
             .link {
                 padding: 0.5rem 1rem;
                 display: flex;
@@ -142,6 +161,7 @@
             align-items: center;
             justify-content: center;
             button {
+                cursor: pointer;
                 display: flex;
                 padding: 0;
                 border: 0;
@@ -218,9 +238,17 @@
     }
     .nav-container.desktop {
         display: grid;
-        padding: 2.5rem 5rem;
+        padding: 2.5rem 5rem !important;
+     
     }
     .btn {
         display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .nav-container.desktop {
+        .socials {
+            display: none;
+        }
     }
 }

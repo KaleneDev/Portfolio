@@ -166,11 +166,30 @@ body {
     margin-inline: auto;
     padding-inline: 1.5rem;
     box-sizing: border-box;
-}
+    padding: 0rem 2rem !important;
 
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.56rem 2rem;
+    border-radius: 999rem;
+    background-color: red;
+    text-decoration: none;
+    font-family: var(--font-public-sans);
+    gap: 0.8rem;
+    color: var(--accent-text-over);
+    font-size: var(--text-lg);
+    box-shadow: var(--shadow-md);
+    background: var(--gradient-accent-orange);
+    line-height: 1.1;
+}
 .stack {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .gap-2 {
