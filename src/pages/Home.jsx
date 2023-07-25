@@ -2,7 +2,7 @@ import { React } from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
-import Work from "../components/work";
+import Work from "../components/Work";
 import Contact from "../components/Contact";
 function Home() {
     return (
