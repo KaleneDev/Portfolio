@@ -1,5 +1,5 @@
 import React from "react";
-import "./work.scss";
+import "./Work.scss";
 import { Link } from "react-router-dom";
 import project1 from "../assets/project/stock-1.jpg";
 import project2 from "../assets/project/stock-2.jpg";
