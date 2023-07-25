@@ -28,9 +28,9 @@
     --bg-gradient-size: calc(var(--bg-scale) * 100%);
 }
 
-:root.theme-dark {
-    --bg-image-main: url("/assets/backgrounds/bg-main-dark-800w.jpg");
-    --bg-image-main-curves: url("/assets/backgrounds/bg-main-dark.svg");
+:root[data-theme="dark"] {
+    --bg-image-main: url("./assets/backgrounds/bg-main-dark-800w.jpg");
+    --bg-image-main-curves: url("./assets/backgrounds/bg-main-dark.svg");
     --bg-svg-blend-mode: darken;
     --bg-blend-mode: lighten;
 }
@@ -40,4 +40,9 @@
     --bg-image-subtle-2: url('./assets/backgrounds/bg-subtle-2-light-800w.jpg');
     --bg-image-subtle-3: url('./assets/backgrounds/bg-subtle-2-light-800w.jpg');
     --bg-image-footer: url('./assets/backgrounds/bg-footer-light-800w.jpg');
+}
+:root[data-theme="dark"]{
+    --bg-image-subtle-1: url('./assets/backgrounds/bg-subtle-1-dark-800w.jpg');
+    --bg-image-subtle-2: url('./assets/backgrounds/bg-subtle-2-dark-800w.jpg');
+    --bg-image-footer: url('./assets/backgrounds/bg-footer-dark-800w.jpg');
 }

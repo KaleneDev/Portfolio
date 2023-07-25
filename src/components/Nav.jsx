@@ -1,7 +1,8 @@
-import { React, useState, useRef } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Icon from "./IconT.jsx";
 import "./Nav.scss";
+import ThemeToggle from "./themeToggle.jsx";
 
 function Nav() {
     const iconLinks = [
@@ -26,14 +27,16 @@ function Nav() {
     const navContaienrRef = useRef(null);
     const closeRef = useRef(null);
     const openRef = useRef(null);
+    const [showNav, setShowNav] = useState(false);
     const toggleMenu = () => {
         const menuContentRef = navContaienrRef.current.children[1];
         menuContentRef.classList.toggle("active");
         setShowMenu(!showMenu);
     };
+
     return (
         <>
-            <nav className="nav-container desktop">
+            <nav className="nav-container desktop wrapper">
                 <div className="menu-header">
                     <Link className="site-title" to="/">
                         <Icon name="terminal-window" />
@@ -68,6 +71,8 @@ function Nav() {
                             </a>
                         ))}
                     </div>
+
+                    <ThemeToggle />
                 </div>
             </nav>
 
@@ -105,11 +110,12 @@ function Nav() {
                                 </a>
                             ))}
                         </div>
+
+                        <ThemeToggle />
                     </div>
                 </div>
             </nav>
             {showMenu && (
-
                 <div className="btn close" onClick={toggleMenu} ref={openRef}>
                     <Icon className="btn" name="close-circle-fill" />
                 </div>

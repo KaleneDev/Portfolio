@@ -7,7 +7,7 @@ aside {
     border-top: 1px solid var(--gray-800);
     gap: 2rem;
     padding: 5rem 0.5rem;
-    background-color: var(--gray-999);
+    // background-color: var(--gray-999);
     box-shadow: var(--shadow-sm);
     h2 {
         margin: 0;
@@ -35,6 +35,19 @@ aside {
             width: 30px;
             height: 30px;
             fill: var(--accent-text-over);
+        }
+    }
+}
+@media (min-width: 800px) {
+    aside {
+        padding: 7.5rem;
+        flex-direction: row;
+        h2 {
+            font-size: var(--text-3xl);
+            text-align: start;
+        }
+        a {
+            font-size: var(--text-xl);
         }
     }
 }
