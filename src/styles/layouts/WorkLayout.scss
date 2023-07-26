@@ -1,0 +1,22 @@
+.works {
+    border-bottom: 1px solid var(--gray-800);
+    padding-bottom: 2.5rem;
+    h1 {
+        font-size: var(--text-3xl);
+    }
+    .details {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        .tags {
+            display: flex;
+            span {
+                background-color: var(--accent-regular);
+                padding: 0.5rem 1rem;
+                border-radius: 999rem;
+                color: var(--accent-text-over);
+            }
+        }
+    }
+}

@@ -3,25 +3,30 @@ import { Link } from "react-router-dom";
 import "./Hero.scss";
 import portrait from "../assets/portrait_02.jpg";
 import sql from "../assets/logos/sql.png";
+import cv from "../assets/CV_2023-05-17_Kalène_A PIOU (Développeur Web).pdf";
 import Icon from "./IconT.jsx";
 function Hero() {
     const iconLinks = [
         {
             label: "Twitter",
-            href: "https://twitter.com/me",
+            href: "https://twitter.com/Kalene777",
             icon: "twitter-logo",
         },
-        { label: "GitHub", href: "https://github.com/me", icon: "github-logo" },
+        {
+            label: "GitHub",
+            href: "https://github.com/KaleneDev",
+            icon: "github-logo",
+        },
         {
             label: "Linkedin",
             href: "https://www.linkedin.com/in/kal%C3%A8ne-a-piou-8ba68826a/",
             icon: "linkedin-logo",
         },
-        {
-            label: "YouTube",
-            href: "https://www.youtube.com/@me/",
-            icon: "youtube-logo",
-        },
+        // {
+        //     label: "YouTube",
+        //     href: "https://www.youtube.com/@me/",
+        //     icon: "youtube-logo",
+        // },
     ];
     return (
         <header className="hero gap-8 lg:gap-20">
@@ -35,16 +40,21 @@ function Hero() {
                     </p>
                     <div className="socials">
                         {iconLinks.map(({ href, icon, label }, i) => (
-                            <a key={i} className="social" href={href}>
+                            <a
+                                key={i}
+                                className="social"
+                                target="_blank"
+                                href={href}
+                            >
                                 <span className="sr-only">{label}</span>
                                 <Icon name={icon} />
                             </a>
                         ))}
                     </div>
                     <div className="container-cv">
-                        <Link className="button cv" to="/work">
+                        <a className="button cv" href={cv} target="_blank">
                             Télécharger CV <Icon name="arrow-right" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className="container-portrait">

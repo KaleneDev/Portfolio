@@ -41,7 +41,7 @@ function Nav() {
         navItemsChild.forEach((item) => item.classList.remove("activeDesktop"));
 
         if (currentURL === "/") {
-        console.log(currentURL);
+            console.log(currentURL);
 
             const navItems = document.querySelector(".nav-items");
             const navItemsChild = navItems.childNodes;
@@ -58,7 +58,14 @@ function Nav() {
             );
         }
 
-        if (currentURL === "/work") {
+        if (
+            currentURL === "/work" ||
+            currentURL === "/work/DiscoverMostSuitableProperty" ||
+            currentURL === "/work/GymWebsite" ||
+            currentURL === "/work/SocialNetwork" ||
+            currentURL === "/work/slider" ||
+            currentURL === "/work/animationText"
+        ) {
             const navItems = document.querySelector(".nav-items");
             const navItemsChild = navItems.childNodes;
             navItemsChild[1].classList.add("activeDesktop");
@@ -145,8 +152,6 @@ function Nav() {
                     </ul>
                 </div>
                 <div className="menu-footer">
-          
-
                     <ThemeToggle />
                 </div>
             </nav>

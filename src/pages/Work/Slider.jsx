@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import WorkLayout from "../../layouts/WorkLayout";
 
 function Slider() {
-  return (
-    <div>Slider</div>
-  )
+    return (
+        <WorkLayout
+            title="Slider"
+            description="Slider"
+            details="Design Dev Branding"
+        ></WorkLayout>
+    );
 }
 
-export default Slider
+export default Slider;

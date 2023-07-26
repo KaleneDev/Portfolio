@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import WorkLayout from "../../layouts/WorkLayout";
 
 function GymWebsite() {
-  return (
-    <div>GymWebsite</div>
-  )
+    return (
+        <WorkLayout
+            title="Gym Website"
+            description="Gym Website"
+            details="Design Dev Branding"
+        ></WorkLayout>
+    );
 }
 
-export default GymWebsite
+export default GymWebsite;
