@@ -22,18 +22,13 @@ function Hero() {
             href: "https://www.linkedin.com/in/kal%C3%A8ne-a-piou-8ba68826a/",
             icon: "linkedin-logo",
         },
-        // {
-        //     label: "YouTube",
-        //     href: "https://www.youtube.com/@me/",
-        //     icon: "youtube-logo",
-        // },
     ];
     return (
         <header className="hero gap-8 lg:gap-20">
             <div className="profile">
                 <div className="hero stack gap-4 lg:gap-4">
                     <h2 className="title">Bonjour, mon nom</h2>
-                    <h1> Kalène A PIOU</h1>
+                    <h1> Kalène APIOU</h1>
                     <h2>Et je suis devoleppeur Frontend</h2>
                     <p className="tagline">
                         Je suis actuellement basé à Poligny, dans le Jura.

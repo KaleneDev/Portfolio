@@ -62,7 +62,7 @@ function themeToggle() {
                 <span className="icon light">
                     <Icon name="light" />
                 </span>
-                <span className="icon dark">
+                <span className="icon dark active">
                     <Icon name="dark" />
                 </span>
             </button>

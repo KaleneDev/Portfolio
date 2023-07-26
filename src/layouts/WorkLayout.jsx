@@ -1,6 +1,8 @@
 import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/layouts/WorkLayout.scss";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 function WorkLayout(props) {
     const { title, description, children, details } = props;
@@ -11,7 +13,7 @@ function WorkLayout(props) {
     }, [title, description]);
     return (
         <>
-            <header className="works">
+            <header className="header works">
                 <div className="stack wrapper">
                     <Link className="back-link" to="/work">Work</Link>
                     <div className="hero">
@@ -30,6 +32,8 @@ function WorkLayout(props) {
                 </div>
             </header>
             {children}
+            <Contact />
+            <Footer />
         </>
     );
 }
