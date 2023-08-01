@@ -16,7 +16,7 @@ Ce projet est mon portfolio personnel développé avec React JS pour la partie f
 - JavaScript (ES6+)
 - HTML5
 - CSS3
-- Animation JavaScript (exemple : animation-lib)
+- Animation JavaScript (full vanilla Javascript)
 
 ## Prérequis
 - Node.js et npm doivent être installés sur votre machine.
