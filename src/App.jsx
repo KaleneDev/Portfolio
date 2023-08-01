@@ -30,7 +30,7 @@ function App() {
                 <Route path="/work/socialnetwork" element={<SocialNetwork />} />
                 <Route path="/work/slider" element={<Slider />} />
                 <Route path="/work/animationtext" element={<AnimationText />} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/work/portfolio" element={<Portfolio />} />
             </Routes>
         </div>
     );

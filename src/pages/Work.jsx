@@ -31,60 +31,53 @@ function Work() {
                             </SlideInFromBot>
                         </header>
                         <div className="gallery">
-                            <ul className="grid">
-                                <ZoomOut scale={0.8}>
-                                    <li>
-                                        <Link
-                                            className="card"
-                                            to="/work/discovermostsuitableproperty"
-                                        >
-                                            <span className="title">
-                                                Discover Most Suitable Property
-                                            </span>
-                                            <img src={project1} alt="" />
-                                        </Link>
-                                    </li>
-                                </ZoomOut>
-                                <ZoomOut scale={0.8} delay={0.4}>
-                                    <li>
-                                        <Link
-                                            className="card"
-                                            to="/work/gymwebsite"
-                                        >
-                                            <span className="title">
-                                                Gym Website
-                                            </span>
-                                            <img src={project2} alt="" />
-                                        </Link>
-                                    </li>
-                                </ZoomOut>
-                                <ZoomOut scale={0.8} delay={0.5}>
-                                    <li>
-                                        <Link
-                                            className="card"
-                                            to="/work/socialnetwork"
-                                        >
-                                            <span className="title">
-                                                Social Network
-                                            </span>
-                                            <img src={project3} alt="" />
-                                        </Link>
-                                    </li>
-                                </ZoomOut>
-                                <ZoomOut scale={0.8} delay={0.2}>
-                                    <li>
-                                        <Link
-                                            className="card"
-                                            to="/work/slider"
-                                        >
-                                            <span className="title">
-                                                Slider
-                                            </span>
-                                            <img src={project4} alt="" />
-                                        </Link>
-                                    </li>
-                                </ZoomOut>
-                            </ul>
+                        <ul className="grid">
+                    <ZoomOut scale={0.8}>
+                        <li>
+                            <Link
+                                className="card"
+                                to="/work/discovermostsuitableproperty"
+                            >
+                                <span className="title">
+                                    Discover Most Suitable Property
+                                </span>
+                                <img src={project1} alt="" />
+                            </Link>
+                        </li>
+                    </ZoomOut>
+                    <ZoomOut scale={0.8} delay={0.1}>
+                        <li>
+                            <Link className="card" to="/work/gymwebsite">
+                                <span className="title">Gym Website</span>
+                                <img src={project2} alt="" />
+                            </Link>
+                        </li>
+                    </ZoomOut>
+                    <ZoomOut scale={0.8} delay={0.2}>
+                        <li>
+                            <Link className="card" to="/work/socialsetwork">
+                                <span className="title">Social Network</span>
+                                <img src={project3} alt="" />
+                            </Link>
+                        </li>
+                    </ZoomOut>
+                    <ZoomOut scale={0.8}delay={0.3}>
+                        <li>
+                            <Link className="card" to="/work/slider">
+                                <span className="title">Slider</span>
+                                <img src={project4} alt="" />
+                            </Link>
+                        </li>
+                    </ZoomOut>
+                    <ZoomOut scale={0.8} delay={0.4}>
+                        <li>
+                            <Link className="card" to="/work/portfolio">
+                                <span className="title">Portfolio</span>
+                                <img src={project4} alt="" />
+                            </Link>
+                        </li>
+                    </ZoomOut>
+                </ul>
                         </div>
                         {/* <div className="button-view-all">
                         <Link to="/work">

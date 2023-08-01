@@ -1,5 +1,5 @@
 import React from "react";
-
+import WorkLayout from "../../layouts/WorkLayout";
 function Portfolio() {
     return (
         <div className="stack gap-15">
@@ -15,7 +15,7 @@ function Portfolio() {
                                 target="_blank"
                                 href="https://gym-web-site-v1.netlify.app/"
                             >
-                                <img src={Gym_Website_01} alt="Gym_Website" />
+                                {/* <img src={Gym_Website_01} alt="Gym_Website" /> */}
                             </a>
                         </div>
                         <div className="stack gap-4">

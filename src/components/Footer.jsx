@@ -11,13 +11,22 @@ function Footer() {
                 </div>
                 <div className="socials">
                     <li>
-                        <a href="">GitHub</a>
+                        <a href="https://github.com/KaleneDev" target="_blank">
+                            GitHub
+                        </a>
                     </li>
                     <li>
-                        <a href="">Linkedin</a>
+                        <a
+                            href="https://www.linkedin.com/in/kal%C3%A8ne-a-piou-8ba68826a/"
+                            target="_blank"
+                        >
+                            Linkedin
+                        </a>
                     </li>
                     <li>
-                        <a href="">Youtube</a>
+                        <a href="mailto:apiou.kalene@gmail.com" target="_blank">
+                            apiou.kalene@gmail.com
+                        </a>
                     </li>
                 </div>
             </SlideInFromBot>
