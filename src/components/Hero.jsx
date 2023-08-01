@@ -9,6 +9,7 @@ import {
     SlideInFromLeft,
     SlideInFromTop,
     SlideInFromBot,
+    ZoomOut,
 } from "../utils/Animations/AnimationText";
 function Hero() {
     const iconLinks = [
@@ -36,6 +37,7 @@ function Hero() {
                         <SlideInFromRight transform={50} duration={1.5}>
                             <h2 className="title">Bonjour, mon nom</h2>
                         </SlideInFromRight>
+        
                         <h1> Kalène APIOU</h1>
                         <SlideInFromLeft transform={50} duration={1.5}>
                             <h2>Et je suis développeur Frontend</h2>
@@ -70,37 +72,59 @@ function Hero() {
                 </SlideInFromBot>
             </div>
             <div className="language">
-                <div>
-                    <Icon name="javaScript"></Icon>
-                    <span> JavaScript</span>
-                </div>
-                <div>
-                    <Icon name="HTML"></Icon>
-                    <span> HTML & CSS</span>
-                </div>
-                <div>
-                    <Icon name="react"></Icon>
-                    <span>React</span>
-                </div>
-                <div>
-                    <Icon name="nodeJs"></Icon>
-                    <span> Node.js</span>
-                </div>
-                <div>Express</div>
-                <div>
-                    <img src={sql} alt="" />
-                    <span>SQL</span>
-                </div>
-                <div>
-                    <Icon name="git"></Icon>
-                    <span>Git</span>
-                </div>
-                <div>Redux</div>
-                <div>
-                    <Icon name="sass"></Icon>
-                    <span>Sass</span>
-                </div>
-                <div>...</div>
+                <ZoomOut delay={0.2}>
+                    <div className="tagline">
+                        <Icon name="javaScript"></Icon>
+                        <span> JavaScript</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.5}>
+                    <div className="tagline">
+                        <Icon name="HTML"></Icon>
+                        <span> HTML & CSS</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut>
+                    <div className="tagline">
+                        <Icon name="react"></Icon>
+                        <span>React</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.3}>
+                    <div className="tagline">
+                        <Icon name="nodeJs"></Icon>
+                        <span> Node.js</span>
+                    </div>
+                </ZoomOut>
+
+                <ZoomOut delay={0.2}>
+                    <div className="tagline">Express</div>
+                </ZoomOut>
+
+                <ZoomOut delay={0.4}>
+                    <div className="tagline">
+                        <img src={sql} alt="" />
+                        <span>SQL</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut>
+                    <div className="tagline">
+                        <Icon name="git"></Icon>
+                        <span>Git</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.3}> 
+                    <div className="tagline">Redux</div>
+                </ZoomOut>
+                <ZoomOut>
+                    <div className="tagline">
+                        <Icon name="sass"></Icon>
+                        <span>Sass</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.5}>
+                    <div className="tagline">...</div>
+                </ZoomOut>
             </div>
         </header>
     );

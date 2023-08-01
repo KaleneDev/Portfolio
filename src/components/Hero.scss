@@ -73,11 +73,23 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 0.5rem;
-        & > div {
+        .ZoomOut {
+            display: flex;
+        }
+        .tagline {
             display: flex;
             gap: 0.5rem;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            font-size: var(--text-md);
+            color: var(--accent-text-over);
+            padding: 0.5rem;
+            border-radius: 99rem;
+            background-color: var(--accent-regular);
+            // background: var( --gradient-accent);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-800);
             svg {
                 width: 1.5rem;
                 height: 1.5rem;
@@ -88,17 +100,6 @@
                 height: 1.5rem;
                 filter: brightness(0) invert(1);
             }
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: var(--text-md);
-            color: var(--accent-text-over);
-            padding: 0.5rem;
-            border-radius: 99rem;
-            background-color: var(--accent-regular);
-            // background: var( --gradient-accent);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--gray-800);
         }
     }
 }
