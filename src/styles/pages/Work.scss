@@ -3,10 +3,22 @@
         grid-template-areas: none !important;
         display: flex;
         flex-direction: column;
-        
+
         .gallery {
             grid-area: none;
-            .grid {
+            ul {
+                grid-template-columns: none !important;
+                gap: 1rem !important;
+            }
+
+            li {
+                .card {
+                    height: 10rem !important;
+                }
+            }
+
+            .grid > :nth-child(odd) {
+                transform: translateX(0);
             }
         }
         .section-header {

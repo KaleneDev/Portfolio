@@ -73,6 +73,8 @@ main {
             }
             &:hover .card {
                 box-shadow: var(--shadow-md);
+                transform: scale(1.01);
+                transition: all 0.3s ease-in-out;
             }
         }
     }

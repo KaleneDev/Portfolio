@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import Icon from "./IconT.jsx";
 import "./Nav.scss";
 import ThemeToggle from "./themeToggle.jsx";
-
+import {
+    SlideInFromRight,
+    SlideInFromTop,
+} from "../utils/Animations/AnimationText";
 function Nav() {
     const iconLinks = [
         {
@@ -120,41 +123,43 @@ function Nav() {
 
     return (
         <>
-            <nav className="nav-container desktop wrapper">
-                <div className="menu-header">
-                    <Link className="site-title" to="/">
-                        <Icon name="terminal-window" />
-                        Kalène A PIOU
-                    </Link>
-                </div>
-                <div className="menu-content">
-                    <ul className="nav-items">
-                        <li>
-                            <Link className="link" to="/">
-                                <span>Accueil</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="link" to="/work">
-                                <span>Travaux</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="link" to="/about">
-                                <span>À propos</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="link" to="/contact">
-                                <span>Contact</span>
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="menu-footer">
-                    <ThemeToggle />
-                </div>
-            </nav>
+            <SlideInFromTop scroll="on">
+                <nav className="nav-container desktop wrapper">
+                    <div className="menu-header">
+                        <Link className="site-title" to="/">
+                            <Icon name="terminal-window" />
+                            Kalène A PIOU
+                        </Link>
+                    </div>
+                    <div className="menu-content">
+                        <ul className="nav-items">
+                            <li>
+                                <Link className="link" to="/">
+                                    <span>Accueil</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="link" to="/work">
+                                    <span>Travaux</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="link" to="/about">
+                                    <span>À propos</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="link" to="/contact">
+                                    <span>Contact</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="menu-footer">
+                        <ThemeToggle />
+                    </div>
+                </nav>
+            </SlideInFromTop>
 
             <nav className="nav-container mobile" ref={navContaienrRef}>
                 <div className="menu-header">
@@ -165,11 +170,13 @@ function Nav() {
                 </div>
                 <div className="menu-content">
                     <ul className="nav-items">
-                        <li>
-                            <Link className="link" to="/">
-                                Accueil
-                            </Link>
-                        </li>
+                        <SlideInFromRight scroll="on">
+                            <li>
+                                <Link className="link" to="/">
+                                    Accueil
+                                </Link>
+                            </li>
+                        </SlideInFromRight>
                         <li>
                             <Link className="link" to="/work">
                                 Travaux

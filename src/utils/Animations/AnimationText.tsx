@@ -1,3 +1,4 @@
+import { log } from "console";
 import React, { useEffect, ReactNode } from "react";
 
 interface Props {
@@ -128,9 +129,6 @@ const SlideInFromRight = ({
     transform,
 }: Props) => {
     const className = `slideInFromRight`;
-    // const ScrollTopAndBot = scroll || "off";
-    const Transfom = transform || 100;
-
     useEffect(() => {
         const textElement = document.querySelectorAll(`.slideInFromRight`);
 
@@ -148,14 +146,17 @@ const SlideInFromRight = ({
                 });
             }, observerOptions);
             observer.observe(element);
+
+            const keyAnimationTransform =
+                element.getAttribute("transform") || 100;
             element.childNodes.forEach((child: any) => {
                 child.style.opacity = 0;
-                child.style.transform = `translateX(${Transfom}%)`;
+                child.style.transform = `translateX(${keyAnimationTransform}%)`;
             });
         });
 
         function checkContent() {
-            const triggerBottom = (window.innerHeight / 5) * 4 + 150;
+            const triggerBottom = (window.innerHeight / 5) * 4 + 200;
 
             textElement.forEach((element) => {
                 const elementTop = element.getBoundingClientRect().top;
@@ -200,7 +201,7 @@ const SlideInFromRight = ({
                 }
 
                 if (elementTop > triggerBottom || elementBot < 0) {
-                    animation(0, Number(keyAnimationTransform || 100), 0.5);
+                    animation(0, Number(keyAnimationTransform), 0.5);
                 } else {
                     animation(1, 0, 1);
                 }
@@ -227,7 +228,6 @@ const SlideInFromLeft = ({
 }: Props) => {
     const className = `slideInFromLeft`;
     const delays = delay || 0;
-    const Transfom = transform || 100;
 
     useEffect(() => {
         const textElement = document.querySelectorAll(`.slideInFromLeft`);
@@ -247,14 +247,18 @@ const SlideInFromLeft = ({
             }, observerOptions);
 
             observer.observe(element);
+
+            const keyAnimationTransform =
+                element.getAttribute("transform") || 100;
+
             element.childNodes.forEach((child: any) => {
                 child.style.opacity = 0;
-                child.style.transform = `translateX(-${Transfom}%)`;
+                child.style.transform = `translateX(-${keyAnimationTransform}%)`;
             });
         });
 
         function checkContent() {
-            const triggerBottom = (window.innerHeight / 5) * 4 + 150;
+            const triggerBottom = (window.innerHeight / 5) * 4 + 200;
             textElement.forEach((element) => {
                 const elementTop = element.getBoundingClientRect().top;
                 let elementBot = element.getBoundingClientRect().bottom;
@@ -284,7 +288,6 @@ const SlideInFromLeft = ({
                             Number(keyAnimationDuration) * duration
                         }s ease ${keyAnimationDelay}s`;
 
-                        child.style.animationDelay = `${delays}s`;
                         child.style.transform = `translateX(-${transform}%)`;
                     });
                 }
@@ -297,7 +300,7 @@ const SlideInFromLeft = ({
                     elementBot = 0;
                 }
                 if (elementTop > triggerBottom || elementBot < 0) {
-                    animation(0, Number(keyAnimationTransform || 100), 0.5);
+                    animation(0, Number(keyAnimationTransform), 0.5);
                 } else {
                     animation(1, 0, 1);
                 }
@@ -324,8 +327,6 @@ const SlideInFromTop = ({
     transform,
 }: Props) => {
     const className = `slideInFromTop`;
-    const ScrollTopAndBot = scroll || "off";
-    const Transfom = transform || 50;
 
     useEffect(() => {
         const textElement = document.querySelectorAll(`.slideInFromTop`);
@@ -345,13 +346,15 @@ const SlideInFromTop = ({
             }, observerOptions);
 
             observer.observe(element);
+            const keyAnimationTransform =
+                element.getAttribute("transform") || 50;
             element.childNodes.forEach((child: any) => {
                 child.style.opacity = 0;
-                child.style.transform = `translateY(-${Transfom}%)`;
+                child.style.transform = `translateY(-${keyAnimationTransform}%)`;
             });
         });
         function checkContent() {
-            const triggerBottom = (window.innerHeight / 5) * 4 + 150;
+            const triggerBottom = (window.innerHeight / 5) * 4 + 250;
             textElement.forEach((element) => {
                 const elementTop = element.getBoundingClientRect().top;
                 let elementBot = element.getBoundingClientRect().bottom;
@@ -426,7 +429,6 @@ const SlideInFromBot = ({
     transform,
 }: Props) => {
     const className = `slideInFromBot`;
-    const ScrollTopAndBot = scroll || "off";
     const Transfom = transform || 50;
 
     useEffect(() => {
@@ -453,7 +455,7 @@ const SlideInFromBot = ({
             });
         });
         function checkContent() {
-            const triggerBottom = (window.innerHeight / 5) * 4 + 150;
+            const triggerBottom = (window.innerHeight / 5) * 4 + 250;
             textElement.forEach((element) => {
                 const elementTop = element.getBoundingClientRect().top;
                 let elementBot = element.getBoundingClientRect().bottom;
@@ -485,9 +487,9 @@ const SlideInFromBot = ({
                         child.style.opacity = opacity;
                     });
                 }
-                if (ScrollTopAndBot === "off") {
+                if (keyAnimationScroll === "off") {
                     elementBot = 0;
-                } else if (ScrollTopAndBot === "on") {
+                } else if (keyAnimationScroll === "on") {
                     elementBot = element.getBoundingClientRect().bottom;
                 } else {
                     elementBot = 0;
@@ -495,7 +497,7 @@ const SlideInFromBot = ({
                 // Vérification si l'élément est sorti de la fenêtre
                 if (elementTop > triggerBottom || elementBot < 0) {
                     // L'élément est sorti de la fenêtre vers le haut ou le bas
-                    animation(0, Transfom, 0.7);
+                    animation(0, Number(keyAnimationTransform), 0.7);
                 } else {
                     // L'élément est dans la fenêtre
                     animation(1, 0, 1);
@@ -516,11 +518,8 @@ const SlideInFromBot = ({
         </div>
     );
 };
-
 const ZoomOut = ({ children, duration, delay, scroll, scale }: Props) => {
     const className = `ZoomOut`;
-    const ScrollTopAndBot = scroll || "off";
-    const Scale = scale || 0.5;
 
     useEffect(() => {
         const textElement = document.querySelectorAll(`.${className}`);
@@ -540,10 +539,10 @@ const ZoomOut = ({ children, duration, delay, scroll, scale }: Props) => {
                 });
             }, observerOptions);
             observer.observe(element);
-
+            const keyAnimationScale = element.getAttribute("scale") || 0.5;
             element.childNodes.forEach((child: any) => {
                 child.style.opacity = 0;
-                child.style.transform = `scale(${Scale})`;
+                child.style.transform = `scale(${keyAnimationScale})`;
             });
         });
 
@@ -612,7 +611,6 @@ const ZoomOut = ({ children, duration, delay, scroll, scale }: Props) => {
         </div>
     );
 };
-
 const ZoomOutPopup = ({ children, duration, delay, scroll }: Props) => {
     const className = `ZoomOutPopup`;
     const delays = delay || 0;

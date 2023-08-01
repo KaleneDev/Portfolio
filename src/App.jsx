@@ -8,6 +8,7 @@ import GymWebsite from "./pages/Work/GymWebsite";
 import SocialNetwork from "./pages/Work/SocialNetwork";
 import Slider from "./pages/Work/Slider";
 import AnimationText from "./pages/Work/AnimationText";
+import Portfolio from "./pages/Work/Portfolio";
 import Nav from "./components/Nav";
 
 import "./App.scss";
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/work/socialnetwork" element={<SocialNetwork />} />
                 <Route path="/work/slider" element={<Slider />} />
                 <Route path="/work/animationtext" element={<AnimationText />} />
+                <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
         </div>
     );

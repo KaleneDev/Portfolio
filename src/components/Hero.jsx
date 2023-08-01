@@ -65,64 +65,64 @@ function Hero() {
                         </div>
                     </div>
                 </SlideInFromTop>
-                <SlideInFromBot transform={50}>
+                <SlideInFromBot transform={50} scroll="on">
                     <div className="container-portrait">
                         <img className="portrait" src={portrait} alt="Kalene" />
                     </div>
                 </SlideInFromBot>
             </div>
             <div className="language">
-                <ZoomOut delay={0.2}>
+                <ZoomOut delay={0.2} scroll="on">
                     <div className="tagline">
                         <Icon name="javaScript"></Icon>
                         <span> JavaScript</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut delay={0.5}>
+                <ZoomOut delay={0.5} scroll="on">
                     <div className="tagline">
                         <Icon name="HTML"></Icon>
                         <span> HTML & CSS</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut>
+                <ZoomOut scroll="on">
                     <div className="tagline">
                         <Icon name="react"></Icon>
                         <span>React</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut delay={0.3}>
+                <ZoomOut delay={0.3} scroll="on">
                     <div className="tagline">
                         <Icon name="nodeJs"></Icon>
                         <span> Node.js</span>
                     </div>
                 </ZoomOut>
 
-                <ZoomOut delay={0.2}>
+                <ZoomOut delay={0.2} scroll="on">
                     <div className="tagline">Express</div>
                 </ZoomOut>
 
-                <ZoomOut delay={0.4}>
+                <ZoomOut delay={0.4} scroll="on">
                     <div className="tagline">
                         <img src={sql} alt="" />
                         <span>SQL</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut>
+                <ZoomOut scroll="on">
                     <div className="tagline">
                         <Icon name="git"></Icon>
                         <span>Git</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut delay={0.3}> 
+                <ZoomOut delay={0.3} scroll="on"> 
                     <div className="tagline">Redux</div>
                 </ZoomOut>
-                <ZoomOut>
+                <ZoomOut scroll="on">
                     <div className="tagline">
                         <Icon name="sass"></Icon>
                         <span>Sass</span>
                     </div>
-                </ZoomOut>
-                <ZoomOut delay={0.5}>
+                </ZoomOut >
+                <ZoomOut delay={0.5} scroll="on">
                     <div className="tagline">...</div>
                 </ZoomOut>
             </div>
