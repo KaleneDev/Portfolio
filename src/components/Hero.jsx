@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Hero.scss";
 import portrait from "../assets/portrait_02.jpg";
 import sql from "../assets/logos/sql.png";
@@ -9,7 +8,7 @@ import {
     SlideInFromRight,
     SlideInFromLeft,
     SlideInFromTop,
-    SlideInFromBot
+    SlideInFromBot,
 } from "../utils/Animations/AnimationText";
 function Hero() {
     const iconLinks = [
@@ -34,11 +33,11 @@ function Hero() {
             <div className="profile">
                 <SlideInFromTop>
                     <div className="hero stack gap-4 lg:gap-4">
-                        <SlideInFromRight transform={50}>
+                        <SlideInFromRight transform={50} duration={1.5}>
                             <h2 className="title">Bonjour, mon nom</h2>
                         </SlideInFromRight>
                         <h1> Kalène APIOU</h1>
-                        <SlideInFromLeft transform={50}>
+                        <SlideInFromLeft transform={50} duration={1.5}>
                             <h2>Et je suis développeur Frontend</h2>
                         </SlideInFromLeft>
                         <p className="tagline">
@@ -65,9 +64,9 @@ function Hero() {
                     </div>
                 </SlideInFromTop>
                 <SlideInFromBot transform={50}>
-                <div className="container-portrait">
-                    <img className="portrait" src={portrait} alt="Kalene" />
-                </div>
+                    <div className="container-portrait">
+                        <img className="portrait" src={portrait} alt="Kalene" />
+                    </div>
                 </SlideInFromBot>
             </div>
             <div className="language">
