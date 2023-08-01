@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/layouts/WorkLayout.scss";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import Icon from "../components/IconT";
 
 function WorkLayout(props) {
     const { title, description, children, details } = props;
@@ -15,7 +16,9 @@ function WorkLayout(props) {
         <>
             <header className="header works">
                 <div className="stack wrapper">
-                    <Link className="back-link" to="/work">Work</Link>
+                    <Link className="back-link" to="/work">
+                        <Icon name="arrow-left" /> Work
+                    </Link>
                     <div className="hero">
                         <div className="stack">
                             <h1>{title}</h1>

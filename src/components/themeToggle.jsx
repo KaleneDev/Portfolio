@@ -28,8 +28,6 @@ function themeToggle() {
     };
     const selectedTheme = localStorage.getItem("theme");
     useEffect(() => {
-       
-
         if (selectedTheme) {
             const root = document.documentElement;
             root.setAttribute("data-theme", selectedTheme);
@@ -44,8 +42,10 @@ function themeToggle() {
         }
         if (selectedTheme === "light") {
             const button = buttonRef.current.children[1];
+            const buttonDark = buttonRef.current.children[2];
             button.classList.add("active");
-        } 
+            buttonDark.classList.remove("active");
+        }
         if (selectedTheme === "dark") {
             const button = buttonRef.current.children[2];
             button.classList.add("active");

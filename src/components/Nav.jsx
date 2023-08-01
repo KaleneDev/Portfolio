@@ -60,11 +60,11 @@ function Nav() {
 
         if (
             currentURL === "/work" ||
-            currentURL === "/work/DiscoverMostSuitableProperty" ||
-            currentURL === "/work/GymWebsite" ||
-            currentURL === "/work/SocialNetwork" ||
+            currentURL === "/work/discovermostsuitableproperty" ||
+            currentURL === "/work/gymwebsite" ||
+            currentURL === "/work/socialnetwork" ||
             currentURL === "/work/slider" ||
-            currentURL === "/work/animationText"
+            currentURL === "/work/animationtext"
         ) {
             const navItems = document.querySelector(".nav-items");
             const navItemsChild = navItems.childNodes;

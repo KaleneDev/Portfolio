@@ -21,7 +21,7 @@ function work() {
                     <li>
                         <Link
                             className="card"
-                            to="/work/DiscoverMostSuitableProperty"
+                            to="/work/discovermostsuitableproperty"
                         >
                             <span className="title">
                                 Discover Most Suitable Property
@@ -30,19 +30,19 @@ function work() {
                         </Link>
                     </li>
                     <li>
-                        <Link className="card" to="/work/GymWebsite">
+                        <Link className="card" to="/work/gymwebsite">
                             <span className="title">Gym Website</span>
                             <img src={project2} alt="" />
                         </Link>
                     </li>
                     <li>
-                        <Link className="card" to="/work/SocialNetwork">
+                        <Link className="card" to="/work/socialsetwork">
                             <span className="title">Social Network</span>
                             <img src={project3} alt="" />
                         </Link>
                     </li>
                     <li>
-                        <Link className="card" to="/work/Slider">
+                        <Link className="card" to="/work/slider">
                             <span className="title">Slider</span>
                             <img src={project4} alt="" />
                         </Link>

@@ -1,26 +1,28 @@
 import React from "react";
 import WorkLayout from "../../layouts/WorkLayout";
-import Discover_Most_Suitable_Property_01 from "../../assets/works/Discover_Most_Suitable_Property_01.png";
-import Discover_Most_Suitable_Property_02 from "../../assets/works/Discover_Most_Suitable_Property_02.png";
+import Discover_Most_Suitable_Property_01 from "../../assets/works/Discover_Most_Suitable_Property_01.jpg";
 function DiscoverMostSuitableProperty() {
     return (
         <div className="stack gap-15">
             <WorkLayout
                 title="Discover Most Suitable Property"
-                description="Discover Most Suitable Property"
+                description="
+
+                Discover Most Suitable Property est une plateforme pour trouver la propriété idéale en comparant les caractéristiques des biens immobiliers, permettant ainsi de prendre des décisions éclairées selon les besoins et préférences des utilisateurs."
                 details="React.js HTML&CSS JavaScript Vite"
             >
                 <main className="container works">
                     <div className="stack wrapper gap-10">
                         <div className="image">
-                            <img
-                                src={Discover_Most_Suitable_Property_01}
-                                alt=""
-                            />
-                            <img
-                                src={Discover_Most_Suitable_Property_02}
-                                alt=""
-                            />
+                            <a
+                                target="_blank"
+                                href="https://discover-most-suitable-property.netlify.app/"
+                            >
+                                <img
+                                    src={Discover_Most_Suitable_Property_01}
+                                    alt="Discover_Most_Suitable_Property"
+                                />
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <div className="stack">
@@ -68,16 +70,24 @@ function DiscoverMostSuitableProperty() {
                                     </p>
                                     <div className="stack gap-2">
                                         <ol>
-                                            1. Cloner le dépôt : git clone
-                                            https://github.com/KaleneDev/Discover_Most_Suitable_Property.git
+                                            1. Cloner le dépôt : git clone{" "}
+                                            <span className="style">
+                                                https://github.com/KaleneDev/Discover_Most_Suitable_Property.git
+                                            </span>{" "}
                                         </ol>
                                         <ol>
-                                            2. Accédez au répertoire du projet
-                                            :cd Discover_Most_Suitable_Property
+                                            2. Accédez au répertoire du projet :{" "}
+                                            <span className="style">
+                                                cd
+                                                Discover_Most_Suitable_Property
+                                            </span>{" "}
                                         </ol>
                                         <ol>
                                             3. Installez les dépendances
-                                            nécessaires :npm install
+                                            nécessaires :{" "}
+                                            <span className="style">
+                                                npm install
+                                            </span>{" "}
                                         </ol>
                                         <ol>
                                             4. Personnalisez les fichiers de
@@ -86,10 +96,16 @@ function DiscoverMostSuitableProperty() {
                                         </ol>
                                         <ol>
                                             5. Démarrez le serveur de
-                                            développement : npm start accédez au
-                                            projet dans votre navigateur sur
-                                            http://localhost:3000 ou sur le port
-                                            spécifié.
+                                            développement :{" "}
+                                            <span className="style">
+                                                npm start
+                                            </span>{" "}
+                                            accédez au projet dans votre
+                                            navigateur sur{" "}
+                                            <span className="style">
+                                                http://localhost:3000
+                                            </span>{" "}
+                                            ou sur le port spécifié.
                                         </ol>
                                     </div>
                                 </div>

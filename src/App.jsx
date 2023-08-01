@@ -22,13 +22,13 @@ function App() {
                 <Route path="/work" element={<Work />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route
-                    path="/work/DiscoverMostSuitableProperty"
+                    path="/work/discovermostsuitableproperty"
                     element={<DiscoverMostSuitableProperty />}
                 />
-                <Route path="/work/GymWebsite" element={<GymWebsite />} />
-                <Route path="/work/SocialNetwork" element={<SocialNetwork />} />
+                <Route path="/work/gymwebsite" element={<GymWebsite />} />
+                <Route path="/work/socialnetwork" element={<SocialNetwork />} />
                 <Route path="/work/slider" element={<Slider />} />
-                <Route path="/work/animationText" element={<AnimationText />} />
+                <Route path="/work/animationtext" element={<AnimationText />} />
             </Routes>
         </div>
     );

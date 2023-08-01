@@ -12,59 +12,69 @@ import "../styles/pages/Work.scss";
 function Work() {
     return (
         <BaseLayout title="Kalène A PIOU: Travaux" description="Mes Travaux">
-            <main className=" stack gap-20 lg:gap-48 wrapper">
-                <section className="wrapper stack section work pageWork gap-15">
-                    <header className="section-header stack">
-                        <h3>Tout mes Projets</h3>
-                        <p>
-                            Jetez un œil ci-dessous à certains de mes travaux
-                            présentés pour des clients au cours des dernières
-                            années.
-                        </p>
-                    </header>
-                    <div className="gallery">
-                        <ul className="grid">
-                            <li>
-                                <Link
-                                    className="card"
-                                    to="/work/DiscoverMostSuitableProperty"
-                                >
-                                    <span className="title">
-                                        Discover Most Suitable Property
-                                    </span>
-                                    <img src={project1} alt="" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="card" to="/work/GymWebsite">
-                                    <span className="title">Gym Website</span>
-                                    <img src={project2} alt="" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="card" to="/work/SocialNetwork">
-                                    <span className="title">
-                                        Social Network
-                                    </span>
-                                    <img src={project3} alt="" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="card" to="/work/Slider">
-                                    <span className="title">Slider</span>
-                                    <img src={project4} alt="" />
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                    {/* <div className="button-view-all">
+            <div className=" stack gap-20 lg:gap-48">
+                <main className=" stack  wrapper">
+                    <section className="wrapper stack section work pageWork gap-15">
+                        <header className="section-header stack">
+                            <h3>Tout mes Projets</h3>
+                            <p>
+                                Jetez un œil ci-dessous à certains de mes
+                                travaux présentés pour des clients au cours des
+                                dernières années.
+                            </p>
+                        </header>
+                        <div className="gallery">
+                            <ul className="grid">
+                                <li>
+                                    <Link
+                                        className="card"
+                                        to="/work/discovermostsuitableproperty"
+                                    >
+                                        <span className="title">
+                                            Discover Most Suitable Property
+                                        </span>
+                                        <img src={project1} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className="card"
+                                        to="/work/gymwebsite"
+                                    >
+                                        <span className="title">
+                                            Gym Website
+                                        </span>
+                                        <img src={project2} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className="card"
+                                        to="/work/socialnetwork"
+                                    >
+                                        <span className="title">
+                                            Social Network
+                                        </span>
+                                        <img src={project3} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="card" to="/work/slider">
+                                        <span className="title">Slider</span>
+                                        <img src={project4} alt="" />
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        {/* <div className="button-view-all">
                         <Link to="/work">
                             Me contacter <Icon name="send-plane-line" />
                         </Link>
                     </div> */}
-                </section>
+                    </section>
+                </main>
                 <Contact />
-            </main>
+            </div>
         </BaseLayout>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import WorkLayout from "../../layouts/WorkLayout";
-
+import Gym_Website_01 from "../../assets/works/Gym_Website_01.png";
 function GymWebsite() {
     return (
         <div className="stack gap-15">
@@ -11,11 +11,13 @@ function GymWebsite() {
             >
                 <main className="container works">
                     <div className="stack wrapper gap-10">
-                    <div className="image">
-                            <img
-                                src={Discover_Most_Suitable_Property_01}
-                                alt=""
-                            />
+                        <div className="image">
+                            <a
+                                target="_blank"
+                                href="https://gym-web-site-v1.netlify.app/"
+                            >
+                                <img src={Gym_Website_01} alt="Gym_Website" />
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <div className="stack">
@@ -64,16 +66,24 @@ function GymWebsite() {
                                     </p>
                                     <div className="stack gap-2">
                                         <ol>
-                                            1. Cloner le dépôt : git clone
-                                            https://github.com/KaleneDev/Discover_Most_Suitable_Property.git
+                                            1. Cloner le dépôt : git clone{" "}
+                                            <span className="style">
+                                                git clone
+                                                https://github.com/KaleneDev/Gym_Website.git
+                                            </span>{" "}
                                         </ol>
                                         <ol>
-                                            2. Accédez au répertoire du projet
-                                            :cd Discover_Most_Suitable_Property
+                                            2. Accédez au répertoire du projet :{" "}
+                                            <span className="style">
+                                                cd Gym Website
+                                            </span>{" "}
                                         </ol>
                                         <ol>
                                             3. Installez les dépendances
-                                            nécessaires :npm install
+                                            nécessaires :{" "}
+                                            <span className="style">
+                                                npm install
+                                            </span>{" "}
                                         </ol>
                                         <ol>
                                             4. Personnalisez les fichiers de
@@ -83,9 +93,22 @@ function GymWebsite() {
                                         <ol>
                                             5. Démarrez le serveur de
                                             développement : npm start accédez au
-                                            projet dans votre navigateur sur
-                                            http://localhost:3000 ou sur le port
-                                            spécifié.
+                                            projet dans votre navigateur sur :{" "}
+                                            <span className="style">
+                                                http://localhost:3000
+                                            </span>{" "}
+                                            ou sur le port spécifié.
+                                        </ol>
+                                        <ol>
+                                            7. Build le siteWeb:{" "}
+                                            <span className="style">
+                                                npm run build
+                                            </span>{" "}
+                                        </ol>
+                                        <ol>
+                                            8. Déployez les fichiers construits
+                                            sur un serveur Web ou un service
+                                            d'hébergement de votre choix.
                                         </ol>
                                     </div>
                                 </div>
