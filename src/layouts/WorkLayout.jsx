@@ -4,7 +4,11 @@ import "../styles/layouts/WorkLayout.scss";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Icon from "../components/IconT";
-
+import {
+    SlideInFromTop,
+    ZoomOut,
+    SlideInFromBot,
+} from "../utils/Animations/AnimationText";
 function WorkLayout(props) {
     const { title, description, children, details } = props;
     const detailsArray = details.split(" ");
@@ -21,15 +25,23 @@ function WorkLayout(props) {
                     </Link>
                     <div className="hero">
                         <div className="stack">
-                            <h1>{title}</h1>
+                            <SlideInFromTop duration={1.5} scroll="on">
+                                <h1>{title}</h1>
+                            </SlideInFromTop>
                         </div>
                         <div className="stack details">
                             <div className="tags gap-2">
                                 {detailsArray.map((detail, index) => {
-                                    return <span key={index}>{detail}</span>;
+                                    return (
+                                        <ZoomOut duration={1.5} scroll="on">
+                                            <span key={index}>{detail}</span>
+                                        </ZoomOut>
+                                    );
                                 })}
                             </div>
-                            <p>{description}</p>
+                            <SlideInFromBot duration={1.5} scroll="on">
+                                <p>{description}</p>
+                            </SlideInFromBot>
                         </div>
                     </div>
                 </div>

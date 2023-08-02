@@ -51,7 +51,7 @@ function work() {
                     </ZoomOut>
                     <ZoomOut scale={0.8} delay={0.2}>
                         <li>
-                            <Link className="card" to="/work/socialsetwork">
+                            <Link className="card" to="/work/socialnetwork">
                                 <span className="title">Social Network</span>
                                 <img src={project3} alt="" />
                             </Link>
