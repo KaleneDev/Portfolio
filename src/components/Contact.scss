@@ -1,4 +1,8 @@
 aside {
+    .contact-me {
+        display: flex;
+        justify-content: center;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +35,11 @@ aside {
         line-height: 1.1;
         gap: 0.8rem;
         max-width: 300px;
+        &:hover {
+            transition: all 0.2s ease-in-out !important;
+            box-shadow: var(--shadow-lg);
+            background: var(--gradient-accent-orange-hover);
+        }
         svg {
             width: 30px;
             height: 30px;

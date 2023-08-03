@@ -15,11 +15,30 @@ footer {
             color: var(--gray-400);
         }
     }
+
     .socials {
         display: flex;
         justify-content: center;
         gap: 1rem;
         li {
+            list-style: none;
+            a {
+                color: var(--gray-400);
+                text-underline-offset: 0.25em;
+                text-decoration: 1px solid underline transparent;
+                transition: text-decoration-color 0.2s ease-in-out;
+            }
+            a:hover {
+                text-decoration-color: var(--gray-400);
+            }
+        }
+    }
+    .nav-footer {
+        display: flex;
+        justify-content: center;
+        li {
+            display: flex;
+            gap: 1rem;
             list-style: none;
             a {
                 color: var(--gray-400);

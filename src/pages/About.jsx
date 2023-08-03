@@ -10,7 +10,7 @@ import {
 function About() {
     return (
         <BaseLayout title="À Propos de Moi" description="À Propos de Moi">
-            <div className="container about">
+            <main className="container about">
                 <div className="stack wrapper gap-2">
                     <SlideInFromTop duration={1.5}>
                         <div>
@@ -137,7 +137,7 @@ function About() {
                         </div>
                     </SlideInFromTop>
                 </div>
-            </div>
+            </main>
             <Contact />
         </BaseLayout>
     );

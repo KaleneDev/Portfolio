@@ -1,0 +1,24 @@
+@mixin buttonBase($padding) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: $padding;
+    border-radius: 999rem;
+    text-decoration: none;
+    font-family: var(--font-public-sans);
+    color: var(--accent-text-over);
+    font-size: var(--text-lg);
+    box-shadow: var(--shadow-md);
+    background: var(--gradient-accent-orange);
+    line-height: 1.1;
+    gap: 0.8rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+        transition: all 0.2s ease-in-out !important;
+        box-shadow: var(--shadow-lg);
+        background: var(--gradient-accent-orange-hover);
+    }
+}

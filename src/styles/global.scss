@@ -1,3 +1,4 @@
+@import "./Mixins/mixins.scss";
 :root {
     overflow-x: hidden;
     /* Colors */
@@ -46,13 +47,19 @@
         var(--accent-regular),
         var(--accent-dark)
     );
+    --gradient-accent-orange-hover: linear-gradient(
+        150deg,
+        var(--accent-dark),
+        var(--accent-light),
+        var(--accent-regular)
+    );
     --gradient-stroke: linear-gradient(
         180deg,
         var(--gray-900),
         var(--gray-700)
     );
-        /* Shadows */
-        --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
+    /* Shadows */
+    --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
         0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
         0px 0px 1px rgba(9, 11, 17, 0.03);
     --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
@@ -96,6 +103,15 @@
     --gray-900: #141925;
     --gray-999-basis: 225, 31%, 5%;
     --gray-999: #090b11;
+
+    --success: #00b159;
+    --success-overlay: hsla(145, 100%, 50%, 0.33);
+    --warning: #f5a623;
+    --warning-overlay: hsla(40, 100%, 50%, 0.33);
+    --warning-text-over: var(--gray-999);
+    --dangerous: #d0021b;
+    --dangerous-overlay: hsla(357, 100%, 50%, 0.33);
+    --dangerous-text-over: var(--gray-999);
 
     --accent-light: #1c0056;
     --accent-regular: #7611a6;
@@ -167,7 +183,6 @@ body {
     padding-inline: 1.5rem;
     box-sizing: border-box;
     padding: 0rem 2rem !important;
-
 }
 .button {
     display: flex;

@@ -15,8 +15,8 @@ import "../styles/pages/Work.scss";
 function Work() {
     return (
         <BaseLayout title="Kalène A PIOU: Travaux" description="Mes Travaux">
-            <div className="stack gap-20 lg:gap-48">
-                <main className=" stack  wrapper">
+            <main className="stack gap-20 lg:gap-48">
+                <div className="stack  wrapper">
                     <section className="wrapper stack section work pageWork gap-15">
                         <header className="section-header stack">
                             <SlideInFromTop duration={1.5}>
@@ -31,53 +31,116 @@ function Work() {
                             </SlideInFromBot>
                         </header>
                         <div className="gallery">
-                        <ul className="grid">
-                    <ZoomOut scale={0.8}>
-                        <li>
-                            <Link
-                                className="card"
-                                to="/work/discovermostsuitableproperty"
-                            >
-                                <span className="title">
-                                    Discover Most Suitable Property
-                                </span>
-                                <img src={project1} alt="" />
-                            </Link>
-                        </li>
-                    </ZoomOut>
-                    <ZoomOut scale={0.8} delay={0.1}>
-                        <li>
-                            <Link className="card" to="/work/gymwebsite">
-                                <span className="title">Gym Website</span>
-                                <img src={project2} alt="" />
-                            </Link>
-                        </li>
-                    </ZoomOut>
-                    <ZoomOut scale={0.8} delay={0.2}>
-                        <li>
-                            <Link className="card" to="/work/socialnetwork">
-                                <span className="title">Social Network</span>
-                                <img src={project3} alt="" />
-                            </Link>
-                        </li>
-                    </ZoomOut>
-                    <ZoomOut scale={0.8}delay={0.3}>
-                        <li>
-                            <Link className="card" to="/work/slider">
-                                <span className="title">Slider</span>
-                                <img src={project4} alt="" />
-                            </Link>
-                        </li>
-                    </ZoomOut>
-                    <ZoomOut scale={0.8} delay={0.4}>
-                        <li>
-                            <Link className="card" to="/work/portfolio">
-                                <span className="title">Portfolio</span>
-                                <img src={project4} alt="" />
-                            </Link>
-                        </li>
-                    </ZoomOut>
-                </ul>
+                            <ul className="grid">
+                                <ZoomOut scale={0.8}>
+                                    <li>
+                                        <Link
+                                            className="card"
+                                            to="/work/discovermostsuitableproperty"
+                                        >
+                                            <div className="top">
+                                                <span className="title">
+                                                    Discover Most Suitable
+                                                    Property
+                                                </span>
+                                            </div>
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                            </div>
+                                            <img src={project1} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                                <ZoomOut scale={0.8} delay={0.1}>
+                                    <li>
+                                        <Link
+                                            className="card"
+                                            to="/work/gymwebsite"
+                                        >
+                                            <div className="top">
+                                                <span className="title">
+                                                    Gym Website
+                                                </span>
+                                            </div>
+
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                            </div>
+                                            <img src={project2} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                                <ZoomOut scale={0.8} delay={0.2}>
+                                    <li>
+                                        <Link
+                                            className="card"
+                                            to="/work/socialnetwork"
+                                        >
+                                            <div className="top">
+                                                <span className="title">
+                                                    Social Network
+                                                </span>
+                                                <span className="work-in-progress">
+                                                    En cours de développement
+                                                </span>
+                                            </div>
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                                <span className="backend">
+                                                    Backend
+                                                </span>
+                                            </div>
+                                            <img src={project3} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                                <ZoomOut scale={0.8} delay={0.3}>
+                                    <li>
+                                        <Link
+                                            className="card"
+                                            to="/work/slider"
+                                        >
+                                            <div className="top">
+                                                <span className="title">
+                                                    Slider
+                                                </span>
+                                            </div>
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                            </div>
+                                            <img src={project4} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                                <ZoomOut scale={0.8} delay={0.4}>
+                                    <li>
+                                        <Link
+                                            className="card"
+                                            to="/work/portfolio"
+                                        >
+                                            <div className="top">
+                                                <span className="title">
+                                                    Portfolio
+                                                </span>
+                                            </div>
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                            </div>
+                                            <img src={project4} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                            </ul>
                         </div>
                         {/* <div className="button-view-all">
                         <Link to="/work">
@@ -85,9 +148,9 @@ function Work() {
                         </Link>
                     </div> */}
                     </section>
-                </main>
+                </div>
                 <Contact />
-            </div>
+            </main>
         </BaseLayout>
     );
 }

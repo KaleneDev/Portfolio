@@ -34,9 +34,14 @@ function work() {
                                 className="card"
                                 to="/work/discovermostsuitableproperty"
                             >
-                                <span className="title">
-                                    Discover Most Suitable Property
-                                </span>
+                                <div className="top">
+                                    <span className="title">
+                                        Discover Most Suitable Property
+                                    </span>
+                                </div>
+                                <div className="role">
+                                    <span className="frontend">Frontend</span>
+                                </div>
                                 <img src={project1} alt="" />
                             </Link>
                         </li>
@@ -44,7 +49,12 @@ function work() {
                     <ZoomOut scale={0.8} delay={0.4}>
                         <li>
                             <Link className="card" to="/work/gymwebsite">
-                                <span className="title">Gym Website</span>
+                                <div className="top">
+                                    <span className="title">Gym Website</span>
+                                </div>
+                                <div className="role">
+                                    <span className="frontend">Frontend</span>
+                                </div>
                                 <img src={project2} alt="" />
                             </Link>
                         </li>
@@ -52,7 +62,19 @@ function work() {
                     <ZoomOut scale={0.8} delay={0.2}>
                         <li>
                             <Link className="card" to="/work/socialnetwork">
-                                <span className="title">Social Network</span>
+                                <div className="top">
+                                    <span className="title">
+                                        Social Network
+                                    </span>
+                                    <span className="work-in-progress">
+                                        En cours de développement
+                                    </span>
+                                </div>
+                                <div className="role">
+                                    <span className="frontend">Frontend</span>
+                                    <span className="backend">Backend</span>
+                                </div>
+
                                 <img src={project3} alt="" />
                             </Link>
                         </li>
@@ -60,7 +82,12 @@ function work() {
                     <ZoomOut scale={0.8}>
                         <li>
                             <Link className="card" to="/work/slider">
-                                <span className="title">Slider</span>
+                                <div className="top">
+                                    <span className="title">Slider</span>
+                                </div>
+                                <div className="role">
+                                    <span className="frontend">Frontend</span>
+                                </div>
                                 <img src={project4} alt="" />
                             </Link>
                         </li>

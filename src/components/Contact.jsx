@@ -8,18 +8,22 @@ import {
     SlideInFromBot,
     ZoomOut,
 } from "../utils/Animations/AnimationText";
+import { Link } from "react-router-dom";
 function Contact() {
     return (
         <>
             <aside>
-                <SlideInFromTop>
-                    <h2>Intéressé par une collaboration ?</h2>
-                </SlideInFromTop>
-                <SlideInFromLeft transform={50} duration={1.5}>
-                    <a href="">
-                        Envoyez-moi un message <Icon name="send-plane-line" />
-                    </a>
-                </SlideInFromLeft>
+                <div className="wrapper contact-me">
+                    <SlideInFromTop>
+                        <h2>Intéressé par une collaboration ?</h2>
+                    </SlideInFromTop>
+                    <SlideInFromLeft transform={50} duration={1.5}>
+                        <Link to="/contact">
+                            Envoyez-moi un message{" "}
+                            <Icon name="send-plane-line" />
+                        </Link>
+                    </SlideInFromLeft>
+                </div>
             </aside>
         </>
     );
