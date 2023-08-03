@@ -188,6 +188,12 @@ function DiscoverMostSuitableProperty() {
                                                     https://discover-most-suitable-property.netlify.app/
                                                 </a>
                                             </p>
+                                            <p>
+                                                Voir le GitHub :{" "}
+                                                <a href="https://github.com/KaleneDev/Discover_Most_Suitable_Property" target="_blank">
+                                                    GitHub
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

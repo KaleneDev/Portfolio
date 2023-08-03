@@ -12,18 +12,23 @@
             font-size: var(--text-xl);
         }
         p {
-            color: var(--gray-400);
+            color: var(--gray-300);
+            font-size: var(--text-lg);
             margin: 0;
+            text-align: justify;
         }
     }
 }
 
 @media screen and (min-width: 800px) {
     .skills {
-        gap: 5rem;
+        gap: 4rem;
         flex-direction: row;
         padding: 2.5rem;
         border-radius: 1.5rem;
+        div {
+            flex: 1;
+        }
         .stack {
 
             h2 {

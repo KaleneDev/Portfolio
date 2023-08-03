@@ -81,9 +81,9 @@ function work() {
                     </ZoomOut>
                     <ZoomOut scale={0.8}>
                         <li>
-                            <Link className="card" to="/work/slider">
+                            <Link className="card" to="/work/portfolio">
                                 <div className="top">
-                                    <span className="title">Slider</span>
+                                    <span className="title">portfolio</span>
                                 </div>
                                 <div className="role">
                                     <span className="frontend">Frontend</span>

@@ -12,7 +12,7 @@ function SocialNetwork() {
             <WorkLayout
                 title="Social Network"
                 description="Le projet 'Social Network' est une application de réseau social permettant aux utilisateurs de se connecter, partager du contenu et interagir entre eux. Cette plateforme vise à fournir une expérience conviviale et sécurisée pour établir des liens avec amis, familles et connaissances."
-                details="Design Dev Branding"
+                details="Vite React HTML&CSS JavaScript Node.js MySQL Sequelize"
             >
                 <main className="container works">
                     <div className="stack wrapper gap-10">
@@ -423,6 +423,15 @@ function SocialNetwork() {
                                                     href="mailto:apiou.kalene@gmail.com"
                                                 >
                                                     apiou.kalene@gmail.com
+                                                </a>
+                                            </p>
+                                            <p>
+                                                Voir le GitHub :{" "}
+                                                <a
+                                                    href="https://github.com/KaleneDev/Social_network"
+                                                    target="_blank"
+                                                >
+                                                    GitHub
                                                 </a>
                                             </p>
                                         </div>

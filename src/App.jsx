@@ -9,6 +9,7 @@ import SocialNetwork from "./pages/Work/SocialNetwork";
 import Slider from "./pages/Work/Slider";
 import AnimationText from "./pages/Work/AnimationText";
 import Portfolio from "./pages/Work/Portfolio";
+import Kanap from "./pages/Work/Kanap";
 import Nav from "./components/Nav";
 
 import "./App.scss";
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/work/slider" element={<Slider />} />
                 <Route path="/work/animationtext" element={<AnimationText />} />
                 <Route path="/work/portfolio" element={<Portfolio />} />
+                <Route path="/work/kanap" element={<Kanap />} />
             </Routes>
         </div>
     );

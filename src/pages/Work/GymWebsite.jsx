@@ -61,7 +61,7 @@ function GymWebsite() {
                                         l'application sur mon{" "}
                                         <a
                                             target="_blank"
-                                            href="https://github.com/KaleneDev/Gym"
+                                            href="https://github.com/KaleneDev/Gym_Website"
                                         >
                                             Github
                                         </a>
@@ -192,6 +192,12 @@ function GymWebsite() {
                                                     href="https://gym-web-site-v1.netlify.app/"
                                                 >
                                                     https://gym-web-site-v1.netlify.app/
+                                                </a>
+                                            </p>
+                                            <p>
+                                                Voir le GitHub :{" "}
+                                                <a href="https://github.com/KaleneDev/Gym_Website" target="_blank">
+                                                    GitHub
                                                 </a>
                                             </p>
                                         </div>

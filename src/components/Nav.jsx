@@ -68,7 +68,8 @@ function Nav() {
             currentURL === "/work/socialnetwork" ||
             currentURL === "/work/slider" ||
             currentURL === "/work/animationtext" ||
-            currentURL === "/work/portfolio"
+            currentURL === "/work/portfolio" ||
+            currentURL === "/work/kanap"
         ) {
             const navItems = document.querySelector(".nav-items");
             const navItemsChild = navItems.childNodes;

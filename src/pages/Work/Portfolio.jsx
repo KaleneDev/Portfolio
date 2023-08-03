@@ -18,16 +18,16 @@ function Portfolio() {
                     <div className="stack wrapper gap-10">
                         <div className="image">
                             <ZoomOut scale={0.8}>
-                            <a
-                                target="_blank"
-                                href="https://porfoliokalene.netlify.app/"
-                            >
+                                <a
+                                    target="_blank"
+                                    href="https://porfoliokalene.netlify.app/"
+                                >
                                     <img
                                         src={Portfolio_01}
                                         alt="Portfolio_01"
                                     />
-                            </a>
-                                </ZoomOut>
+                                </a>
+                            </ZoomOut>
                         </div>
                         <div className="stack gap-4">
                             <SlideInFromLeft duration={1.5} transform={10}>
@@ -238,6 +238,15 @@ function Portfolio() {
                                                     href="https://gym-web-site-v1.netlify.app/"
                                                 >
                                                     https://porfoliokalene.netlify.app
+                                                </a>
+                                            </p>
+                                            <p>
+                                                Voir le GitHub :{" "}
+                                                <a
+                                                    href="https://github.com/KaleneDev/Portfolio"
+                                                    target="_blank"
+                                                >
+                                                    GitHub
                                                 </a>
                                             </p>
                                         </div>

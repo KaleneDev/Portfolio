@@ -110,6 +110,9 @@ function Work() {
                                                 <span className="title">
                                                     Slider
                                                 </span>
+                                                <span className="work-in-progress">
+                                                    En cours de développement
+                                                </span>
                                             </div>
                                             <div className="role">
                                                 <span className="frontend">
@@ -136,7 +139,27 @@ function Work() {
                                                     Frontend
                                                 </span>
                                             </div>
-                                            <img src={project4} alt="" />
+                                            <img src={project1} alt="" />
+                                        </Link>
+                                    </li>
+                                </ZoomOut>
+                                <ZoomOut scale={0.8} delay={0.55}>
+                                    <li>
+                                        <Link className="card" to="/work/kanap">
+                                            <div className="top">
+                                                <span className="title">
+                                                    Kanap
+                                                </span>
+                                            </div>
+                                            <div className="role">
+                                                <span className="frontend">
+                                                    Frontend
+                                                </span>
+                                                <span className="backend">
+                                                    Backend
+                                                </span>
+                                            </div>
+                                            <img src={project2} alt="" />
                                         </Link>
                                     </li>
                                 </ZoomOut>
