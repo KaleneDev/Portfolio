@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import portrait from "../assets/portrait_02.jpg";
 import sql from "../assets/logos/sql.png";
-import cv from "../assets/CV_2023-05-17_Kalène_A PIOU (Développeur Web).pdf";
+import cv from "../assets/CV_2023-08-03_Kalène_A PIOU (Développeur Web).pdf";
 import Icon from "./IconT.jsx";
 import {
     SlideInFromRight,

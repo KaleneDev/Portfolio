@@ -30,17 +30,19 @@
             }
         }
     }
-    .button.cv {
-        margin: auto;
-        max-width: 200px;
-        margin-bottom: 1rem;
-        &:hover {
-            transition: all 0.2s ease-in-out !important;
-            box-shadow: var(--shadow-lg);
-            background: var(--gradient-accent-orange-hover);
-        }
-        svg {
-            fill: var(--accent-text-over);
+    .container-cv {
+        .button.cv {
+            margin: auto;
+            max-width: 200px;
+            margin-bottom: 1rem;
+            &:hover {
+                transition: all 0.2s ease-in-out !important;
+                box-shadow: var(--shadow-lg);
+                background: var(--gradient-accent-orange-hover);
+            }
+            svg {
+                fill: var(--accent-text-over);
+            }
         }
     }
     h1 {

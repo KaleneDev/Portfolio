@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        color: var(--gray-200);
         svg {
             width: 1.5rem;
             height: 1.5rem;
@@ -20,10 +21,15 @@
         justify-content: center;
         align-items: center;
         p {
+            color: var(--gray-100);
             text-align: center;
         }
         .tags {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
             span {
                 background-color: var(--accent-regular);
                 padding: 0.5rem 1rem;
@@ -44,7 +50,7 @@
         cursor: pointer;
         max-height: 45rem;
         height: 100%;
-    
+
         img {
             width: 100%;
             height: 100%;
@@ -91,7 +97,7 @@
         font-size: var(--text-md);
     }
     a {
-        color: var(--accent-text-over);
+        color: var(--gray-200);
     }
 }
 

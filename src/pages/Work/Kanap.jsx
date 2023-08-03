@@ -51,7 +51,7 @@ function Kanap() {
                                         l'application sur mon{" "}
                                         <a
                                             target="_blank"
-                                            href="https://github.com/KaleneDev/Gym"
+                                            href="https://github.com/KaleneDev/P5_Web_kanap"
                                         >
                                             Github
                                         </a>
@@ -146,6 +146,15 @@ function Kanap() {
                                                     apiou.kalene@gmail.com
                                                 </a>
                                                 .
+                                            </p>
+                                            <p>
+                                                Voir le GitHub :{" "}
+                                                <a
+                                                    href="https://github.com/KaleneDev/P5_Web_kanap"
+                                                    target="_blank"
+                                                >
+                                                    GitHub
+                                                </a>
                                             </p>
                                         </div>
                                     </div>
