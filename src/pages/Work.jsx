@@ -16,7 +16,7 @@ function Work() {
     return (
         <BaseLayout title="Kalène A PIOU: Travaux" description="Mes Travaux">
             <main className="stack gap-20 lg:gap-48">
-                <div className="stack  wrapper">
+                <div className="stack">
                     <section className="wrapper stack section work pageWork gap-15">
                         <header className="section-header stack">
                             <SlideInFromTop duration={1.5}>

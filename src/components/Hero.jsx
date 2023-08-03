@@ -35,12 +35,12 @@ function Hero() {
                 <SlideInFromTop>
                     <div className="hero stack gap-4 lg:gap-4">
                         <SlideInFromRight transform={50} duration={1.5}>
-                            <h2 className="title">Bonjour, mon nom</h2>
+                            <h2 className="title">Bonjour, je suis</h2>
                         </SlideInFromRight>
         
                         <h1> Kalène APIOU</h1>
                         <SlideInFromLeft transform={50} duration={1.5}>
-                            <h2>Et je suis développeur Frontend</h2>
+                            <h2>Développeur Frontend</h2>
                         </SlideInFromLeft>
                         <p className="tagline">
                             Je suis actuellement basé à Poligny, dans le Jura.

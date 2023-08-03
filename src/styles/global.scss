@@ -1,6 +1,5 @@
 @import "./Mixins/mixins.scss";
 :root {
-
     /* Colors */
     --gray-0: #090b11;
     --gray-50: #141925;
@@ -183,6 +182,8 @@ body {
     padding-inline: 1.5rem;
     box-sizing: border-box;
     padding: 0rem 2rem !important;
+    overflow-x: hidden;
+
 }
 .button {
     display: flex;
@@ -205,6 +206,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
+    overflow-x: hidden;
+
 }
 
 .gap-2 {
@@ -255,5 +258,11 @@ body {
     }
     .lg\:gap-48 {
         gap: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0rem 1rem !important;
     }
 }
