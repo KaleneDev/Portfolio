@@ -42,6 +42,9 @@
     }
     .image {
         cursor: pointer;
+        max-height: 45rem;
+        height: 100%;
+    
         img {
             width: 100%;
             height: 100%;
@@ -53,11 +56,10 @@
         }
     }
     .image:hover {
-        img {
-            transition: all 0.3s ease-in-out;
-            box-shadow: var(--shadow-lg);
-            scale: 1.005;
-        }
+        border-radius: 1rem;
+        transition: all 0.3s ease-in-out;
+        box-shadow: var(--shadow-lg);
+        scale: 1.005;
     }
     hr {
         width: 100%;
@@ -95,7 +97,12 @@
 
 @media screen and (min-width: 800px) {
     .container.works {
+        .image:hover {
+            border-radius: 2rem;
+        }
         .image {
+            border-radius: 2rem;
+
             img {
                 border-radius: 2rem;
             }

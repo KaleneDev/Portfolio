@@ -1,5 +1,13 @@
 .about {
     margin-bottom: 6rem;
+    .container-image {
+        margin: auto;
+        img {
+            border-radius: 4rem;
+            max-width: 300px;
+            box-shadow: var(--shadow-md);
+        }
+    }
     .title {
         font-size: var(--text-3xl);
         text-align: center;

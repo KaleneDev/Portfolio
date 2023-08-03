@@ -18,14 +18,14 @@ function Kanap() {
                 <main className="container works">
                     <div className="stack wrapper gap-10">
                         <div className="image">
-                            <ZoomOut scale={0.8}>
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/KaleneDev/P5_Web_kanap"
-                                >
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaleneDev/P5_Web_kanap"
+                            >
+                                <ZoomOut scale={0.8}>
                                     <img src={Kanap_01} alt="Kanap_01" />
-                                </a>
-                            </ZoomOut>
+                                </ZoomOut>
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <SlideInFromLeft duration={1.5} transform={10}>

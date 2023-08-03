@@ -19,17 +19,17 @@ function DiscoverMostSuitableProperty() {
                 <main className="container works">
                     <div className="stack wrapper gap-10">
                         <div className="image">
-                            <ZoomOut scale={0.8}>
-                                <a
-                                    target="_blank"
-                                    href="https://discover-most-suitable-property.netlify.app/"
-                                >
+                            <a
+                                target="_blank"
+                                href="https://discover-most-suitable-property.netlify.app/"
+                            >
+                                <ZoomOut scale={0.8}>
                                     <img
                                         src={Discover_Most_Suitable_Property_01}
                                         alt="Discover_Most_Suitable_Property"
                                     />
-                                </a>
-                            </ZoomOut>
+                                </ZoomOut>
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <SlideInFromLeft duration={1.5} transform={10}>
@@ -190,7 +190,10 @@ function DiscoverMostSuitableProperty() {
                                             </p>
                                             <p>
                                                 Voir le GitHub :{" "}
-                                                <a href="https://github.com/KaleneDev/Discover_Most_Suitable_Property" target="_blank">
+                                                <a
+                                                    href="https://github.com/KaleneDev/Discover_Most_Suitable_Property"
+                                                    target="_blank"
+                                                >
                                                     GitHub
                                                 </a>
                                             </p>

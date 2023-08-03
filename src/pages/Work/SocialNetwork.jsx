@@ -17,17 +17,17 @@ function SocialNetwork() {
                 <main className="container works">
                     <div className="stack wrapper gap-10">
                         <div className="image">
-                            <ZoomOut scale={0.8}>
-                                <a
-                                    target="_blank"
-                                    href="https://discover-most-suitable-property.netlify.app/"
-                                >
+                            <a
+                                target="_blank"
+                                href="https://discover-most-suitable-property.netlify.app/"
+                            >
+                                <ZoomOut scale={0.8}>
                                     <img
                                         src={SocialnNetwork_01}
                                         alt="SocialnNetwork_01"
                                     />
-                                </a>
-                            </ZoomOut>
+                                </ZoomOut>
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <SlideInFromLeft duration={1.5} transform={10}>

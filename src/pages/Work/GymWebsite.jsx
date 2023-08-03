@@ -17,17 +17,17 @@ function GymWebsite() {
                 <main className="container works">
                     <div className="stack wrapper gap-10">
                         <div className="image">
-                            <ZoomOut scale={0.8}>
-                                <a
-                                    target="_blank"
-                                    href="https://gym-web-site-v1.netlify.app/"
-                                >
+                            <a
+                                target="_blank"
+                                href="https://gym-web-site-v1.netlify.app/"
+                            >
+                                <ZoomOut scale={0.8}>
                                     <img
                                         src={Gym_Website_01}
                                         alt="Gym_Website"
                                     />
-                                </a>
-                            </ZoomOut>
+                                </ZoomOut>
+                            </a>
                         </div>
                         <div className="stack gap-4">
                             <SlideInFromLeft duration={1.5} transform={10}>
@@ -196,7 +196,10 @@ function GymWebsite() {
                                             </p>
                                             <p>
                                                 Voir le GitHub :{" "}
-                                                <a href="https://github.com/KaleneDev/Gym_Website" target="_blank">
+                                                <a
+                                                    href="https://github.com/KaleneDev/Gym_Website"
+                                                    target="_blank"
+                                                >
                                                     GitHub
                                                 </a>
                                             </p>

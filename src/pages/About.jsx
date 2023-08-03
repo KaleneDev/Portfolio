@@ -2,16 +2,18 @@ import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import Contact from "../components/Contact";
 import "../styles/pages/About.scss";
-import {
-    SlideInFromTop,
-    SlideInFromBot,
-    ZoomOut,
-} from "../utils/Animations/AnimationText";
+import { SlideInFromTop, ZoomOut } from "../utils/Animations/AnimationText";
+import Portrait_01 from "../assets/portrait.png";
 function About() {
     return (
         <BaseLayout title="À Propos de Moi" description="À Propos de Moi">
             <main className="container about">
                 <div className="stack wrapper gap-2">
+                    <div className="container-image">
+                        <ZoomOut scale={0.8}>
+                            <img src={Portrait_01} alt="" />
+                        </ZoomOut>
+                    </div>
                     <SlideInFromTop duration={1.5}>
                         <div>
                             <h1 className="title">À Propos de Moi</h1>
