@@ -152,7 +152,7 @@ main {
     }
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .section.work {
         display: grid;
         // grid-template-columns: repeat(4, 1fr);

@@ -55,7 +55,7 @@ footer {
         margin: 0;
     }
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     footer {
         flex-direction: row;
         .group {

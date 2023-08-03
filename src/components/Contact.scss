@@ -2,11 +2,11 @@ aside {
     .contact-me {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
     border-bottom: 1px solid var(--gray-800);
     border-top: 1px solid var(--gray-800);
     gap: 2rem;
@@ -47,13 +47,13 @@ aside {
         }
     }
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     aside {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 7.5rem;
-        flex-direction: row;
-        gap: 2rem;
+        .contact-me {
+            flex-direction: row;
+            gap: 0rem;
+        }
+ 
         h2 {
             font-size: var(--text-3xl);
             margin: auto;
