@@ -24,7 +24,7 @@ function WorkLayout(props) {
                         <Icon name="arrow-left" /> Work
                     </Link>
                     <div className="hero">
-                        <div className="stack">
+                        <div>
                             <SlideInFromTop duration={1.5} scroll="on">
                                 <h1>{title}</h1>
                             </SlideInFromTop>
