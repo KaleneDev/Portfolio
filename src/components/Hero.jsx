@@ -104,7 +104,19 @@ function Hero() {
                 <ZoomOut delay={0.4} scroll="on">
                     <div className="tagline">
                         <img src={sql} alt="" />
-                        <span>SQL</span>
+                        <span>Mysql</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.4} scroll="on">
+                    <div className="tagline">
+                        <img src={sql} alt="" />
+                        <span>PHP</span>
+                    </div>
+                </ZoomOut>
+                <ZoomOut delay={0.4} scroll="on">
+                    <div className="tagline">
+                        <img src={sql} alt="" />
+                        <span>WordPress</span>
                     </div>
                 </ZoomOut>
                 <ZoomOut scroll="on">
