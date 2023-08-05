@@ -33,7 +33,7 @@ function Hero() {
         <header className="hero gap-8 lg:gap-20">
             <div className="profile">
                 <SlideInFromTop>
-                    <div className="hero stack gap-4 lg:gap-4">
+                    <div className="hero gap-4 lg:gap-4">
                         <SlideInFromRight transform={50} duration={1.5}>
                             <h2 className="title">Bonjour, je suis</h2>
                         </SlideInFromRight>

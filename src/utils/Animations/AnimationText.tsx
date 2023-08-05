@@ -181,6 +181,7 @@ const SlideInFromRight = ({
                             child.style.display = "inline-block";
                         }
                         child.style.opacity = opacity;
+                        // child.style.overflowX = "hidden";
 
                         child.style.transition = `transform ${
                             Number(keyAnimationDuration) * duration
@@ -281,6 +282,7 @@ const SlideInFromLeft = ({
                             child.style.display = "inline-block";
                         }
                         child.style.opacity = opacity;
+                        // child.style.overflowX = "hidden";
 
                         child.style.transition = `transform ${
                             Number(keyAnimationDuration) * duration
