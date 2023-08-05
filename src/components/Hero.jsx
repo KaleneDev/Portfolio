@@ -37,7 +37,7 @@ function Hero() {
                         <SlideInFromRight transform={50} duration={1.5}>
                             <h2 className="title">Bonjour, je suis</h2>
                         </SlideInFromRight>
-        
+
                         <h1> Kalène APIOU</h1>
                         <SlideInFromLeft transform={50} duration={1.5}>
                             <h2>Développeur Frontend</h2>
@@ -109,13 +109,14 @@ function Hero() {
                 </ZoomOut>
                 <ZoomOut delay={0.4} scroll="on">
                     <div className="tagline">
-                        <img src={sql} alt="" />
+                        <Icon name="php"></Icon>
+
                         <span>PHP</span>
                     </div>
                 </ZoomOut>
                 <ZoomOut delay={0.4} scroll="on">
                     <div className="tagline">
-                        <img src={sql} alt="" />
+                        <Icon name="wordPress"></Icon>
                         <span>WordPress</span>
                     </div>
                 </ZoomOut>
@@ -125,7 +126,7 @@ function Hero() {
                         <span>Git</span>
                     </div>
                 </ZoomOut>
-                <ZoomOut delay={0.3} scroll="on"> 
+                <ZoomOut delay={0.3} scroll="on">
                     <div className="tagline">Redux</div>
                 </ZoomOut>
                 <ZoomOut scroll="on">
@@ -133,7 +134,7 @@ function Hero() {
                         <Icon name="sass"></Icon>
                         <span>Sass</span>
                     </div>
-                </ZoomOut >
+                </ZoomOut>
                 <ZoomOut delay={0.5} scroll="on">
                     <div className="tagline">...</div>
                 </ZoomOut>
