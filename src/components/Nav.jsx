@@ -66,7 +66,7 @@ function Nav() {
             currentURL === "/work/discovermostsuitableproperty" ||
             currentURL === "/work/gymwebsite" ||
             currentURL === "/work/socialnetwork" ||
-            currentURL === "/work/slider" ||
+            currentURL === "/work/immobilier" ||
             currentURL === "/work/animationtext" ||
             currentURL === "/work/portfolio" ||
             currentURL === "/work/kanap"

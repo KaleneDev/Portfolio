@@ -45,9 +45,12 @@ function Work() {
                                                 </span>
                                             </div>
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
+                                                <div className="tech"></div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project1} alt="" />
                                         </Link>
@@ -66,9 +69,12 @@ function Work() {
                                             </div>
 
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
+                                                <div className="tech"></div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project2} alt="" />
                                         </Link>
@@ -89,12 +95,18 @@ function Work() {
                                                 </span>
                                             </div>
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
-                                                <span className="backend">
-                                                    Backend
-                                                </span>
+                                                <div className="tech">
+                                                    <span>React</span>
+                                                    <span>Node JS</span>
+                                                </div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                    <span className="backend">
+                                                        Backend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project3} alt="" />
                                         </Link>
@@ -104,20 +116,28 @@ function Work() {
                                     <li>
                                         <Link
                                             className="card"
-                                            to="/work/slider"
+                                            to="/work/immobilier"
                                         >
                                             <div className="top">
                                                 <span className="title">
-                                                    Slider
+                                                    Immobilier
                                                 </span>
                                                 <span className="work-in-progress">
                                                     En cours de développement
                                                 </span>
                                             </div>
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
+                                                <div className="tech">
+                                                    <span>WordPress</span>
+                                                </div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                    <span className="backend">
+                                                        Backend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project4} alt="" />
                                         </Link>
@@ -135,9 +155,12 @@ function Work() {
                                                 </span>
                                             </div>
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
+                                                <div className="tech"></div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project1} alt="" />
                                         </Link>
@@ -152,12 +175,15 @@ function Work() {
                                                 </span>
                                             </div>
                                             <div className="role">
-                                                <span className="frontend">
-                                                    Frontend
-                                                </span>
-                                                <span className="backend">
-                                                    Backend
-                                                </span>
+                                                <div className="tech"></div>
+                                                <div className="dev">
+                                                    <span className="frontend">
+                                                        Frontend
+                                                    </span>
+                                                    <span className="backend">
+                                                        Backend
+                                                    </span>
+                                                </div>
                                             </div>
                                             <img src={project2} alt="" />
                                         </Link>

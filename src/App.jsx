@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import DiscoverMostSuitableProperty from "./pages/Work/DiscoverMostSuitableProperty";
 import GymWebsite from "./pages/Work/GymWebsite";
 import SocialNetwork from "./pages/Work/SocialNetwork";
-import Slider from "./pages/Work/Slider";
+import Immobilier from "./pages/Work/Immobilier";
 import AnimationText from "./pages/Work/AnimationText";
 import Portfolio from "./pages/Work/Portfolio";
 import Kanap from "./pages/Work/Kanap";
@@ -29,7 +29,7 @@ function App() {
                 />
                 <Route path="/work/gymwebsite" element={<GymWebsite />} />
                 <Route path="/work/socialnetwork" element={<SocialNetwork />} />
-                <Route path="/work/slider" element={<Slider />} />
+                <Route path="/work/immobilier" element={<Immobilier />} />
                 <Route path="/work/animationtext" element={<AnimationText />} />
                 <Route path="/work/portfolio" element={<Portfolio />} />
                 <Route path="/work/kanap" element={<Kanap />} />

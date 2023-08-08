@@ -92,26 +92,46 @@ main {
                     }
                 }
                 .role {
+                    align-items: start;
                     display: flex;
                     position: absolute;
-                    bottom: 0.5rem;
-                    right: 0.5rem;
+                    bottom: 0rem;
                     gap: 0.5rem;
-                    .frontend {
-                        background-color: rgba(26, 26, 201, 0.641);
-                        padding: 0.5rem 1rem;
-                        border-radius: 1rem;
-                        color: var(--accent-text-over);
-                        margin: 0;
-                        box-shadow: var(--shadow-sm);
+                    justify-content: space-between;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 1rem;
+                    .dev {
+                        display: flex;
+                        gap: 1rem;
+                        .frontend {
+                            background-color: rgba(26, 26, 201, 0.641);
+                            padding: 0.5rem 1rem;
+                            border-radius: 1rem;
+                            color: var(--accent-text-over);
+                            margin: 0;
+                            box-shadow: var(--shadow-sm);
+                        }
+                        .backend {
+                            background-color: rgba(20, 171, 20, 0.641);
+                            padding: 0.5rem 1rem;
+                            border-radius: 1rem;
+                            color: var(--accent-text-over);
+                            margin: 0;
+                            box-shadow: var(--shadow-sm);
+                        }
                     }
-                    .backend {
-                        background-color: rgba(20, 171, 20, 0.641);
-                        padding: 0.5rem 1rem;
-                        border-radius: 1rem;
-                        color: var(--accent-text-over);
-                        margin: 0;
-                        box-shadow: var(--shadow-sm);
+                    .tech {
+                        display: flex;
+                        gap: 1rem;
+                        span {
+                            background-color: var(--gray-700);
+                            padding: 0.5rem 1rem;
+                            border-radius: 1rem;
+                            color: var(--accent-text-over);
+                            margin: 0;
+                            box-shadow: var(--shadow-sm);
+                        }
                     }
                 }
                 img {
@@ -149,6 +169,19 @@ main {
                 fill: var(--accent-text-over);
                 width: 1.5em;
             }
+        }
+    }
+}
+@media screen and (max-width: 535px) {
+    .role,
+    .top {
+        .dev,
+        .tech {
+            flex-direction: column;
+            gap: 0.5rem !important;
+        }
+        span {
+            font-size: var(--text-sm);
         }
     }
 }
