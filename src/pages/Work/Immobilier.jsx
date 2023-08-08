@@ -175,6 +175,51 @@ function Slider() {
                                 </div>
                             </SlideInFromRight>
 
+                            <SlideInFromLeft duration={1.5} transform={10}>
+                                <div className="stack">
+                                    <h1 className="title">Utilisation</h1>
+                                    <hr />
+                                    <div className="stack gap-4">
+                                        <div className="stack gap-2">
+                                            <ol>
+                                                1. Pour développer le site,
+                                                utilisez la commande suivante
+                                                pour lancer le mode de
+                                                développement avec surveillance
+                                                des fichiers :
+                                                <span className="style">
+                                                    npm run dev
+                                                </span>{" "}
+                                            </ol>
+                                            <ol>
+                                                2. Ouvrez votre navigateur web
+                                                et accédez à{" "}
+                                                <span className="style">
+                                                    <a href="http://localhost:3000/Immobilier/">
+                                                        http://localhost:3000/Immobilier/
+                                                    </a>
+                                                </span>{" "}
+                                                Vous serez redirigé vers la page
+                                                d'accueil du site.
+                                            </ol>
+                                            <ol>
+                                                3. Pour construire le site en
+                                                mode développement ou
+                                                production, utilisez l'une des
+                                                commandes suivantes en fonction
+                                                de vos besoins :{" "}
+                                                <span className="style">
+                                                    npm run build-dev
+                                                </span>{" "}
+                                                <span className="style">
+                                                    npm run build-prod
+                                                </span>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SlideInFromLeft>
+
                             <SlideInFromRight duration={1.5} transform={10}>
                                 <div className="stack">
                                     <h1 className="title">Contribuant</h1>
