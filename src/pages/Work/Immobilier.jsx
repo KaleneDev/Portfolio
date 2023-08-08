@@ -13,7 +13,7 @@ function Slider() {
             <WorkLayout
                 title="Immobilier"
                 description="Découvrez notre site WordPress immobilier, propulsé par Webpack et habillé avec le style élégant de Tailwind CSS. Explorez une gamme exceptionnelle de propriétés, utilisez des fonctionnalités avancées de recherche et plongez-vous dans des galeries de photos captivantes. Grâce à notre interface fluide et à nos fonctionnalités intuitives, trouvez votre chez-vous idéal en un clin d'œil."
-                details="WordPress HTML&CSS JavaScript MySQL PHP Tailwind JQuery"
+                details="WordPress HTML&CSS JavaScript MySQL PHP Tailwind JQuery Webpack"
             >
                 <main className="container works">
                     <div className="stack wrapper gap-10">
@@ -101,11 +101,15 @@ function Slider() {
                                             <div className="stack gap-2">
                                                 <li>HTML5 & CSS3</li>
                                                 <li>JavaScript</li>
+                                                <li>jQuery</li>
+                                                <li>Tailwind</li>
+                                                <li>Webpack</li>
                                             </div>
                                             <h3>Back-end</h3>
                                             <div className="stack gap-2">
-                                                <li>Node</li>
-                                                <li>Express</li>
+                                                <li>PHP</li>
+                                                <li>MySQL</li>
+                                                <li>WordPress</li>
                                             </div>
                                         </div>
                                     </div>
@@ -117,6 +121,13 @@ function Slider() {
                                     <h1 className="title">Installation</h1>
                                     <hr />
                                     <div className="stack gap-4">
+                                        {" "}
+                                        <h3>Prérequis</h3>
+                                        <p>
+                                            Avant de commencer, assurez-vous
+                                            d'avoir installé Node.js et npm sur
+                                            votre système.
+                                        </p>
                                         <p>
                                             Pour exécuter le projet Kanap
                                             localement, procédez comme suit :
@@ -133,27 +144,31 @@ function Slider() {
                                                 2. Accédez au répertoire du
                                                 projet :{" "}
                                                 <span className="style">
-                                                    cd Kanap/backend
+                                                    cd ThemeKalene
                                                 </span>{" "}
                                             </ol>
                                             <ol>
-                                                3. Installez les dépendances
+                                                3. Copiez le dossier du thème
+                                                dans le répertoire themes de
+                                                votre installation WordPress,
+                                                généralement situé à l'intérieur
+                                                de wp-content.
+                                            </ol>
+                                            <ol>
+                                                4. Installez les dépendances
                                                 nécessaires :{" "}
                                                 <span className="style">
                                                     npm install
                                                 </span>{" "}
                                             </ol>
                                             <ol>
-                                                4. Personnalisez les fichiers de
-                                                configuration du projet, si
-                                                nécessaire.
-                                            </ol>
-                                            <ol>
-                                                5. Ouvrir le fichier{" "}
+                                                5. Acceder un site
                                                 <span className="style">
-                                                    index.html
+                                                    <a href="http://localhost:8888/Immobilier/ ">
+                                                        http://localhost:8888/Immobilier/{" "}
+                                                    </a>
                                                 </span>
-                                                .
+                                                (le port peux être différent) .
                                             </ol>
                                         </div>
                                     </div>
