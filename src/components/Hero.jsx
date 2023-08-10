@@ -135,6 +135,12 @@ function Hero() {
                         <span>Sass</span>
                     </div>
                 </ZoomOut>
+                <ZoomOut scroll="on">
+                    <div className="tagline">
+                        {/* <Icon name="sass"></Icon> */}
+                        <span>TypeScript</span>
+                    </div>
+                </ZoomOut>
                 <ZoomOut delay={0.5} scroll="on">
                     <div className="tagline">...</div>
                 </ZoomOut>

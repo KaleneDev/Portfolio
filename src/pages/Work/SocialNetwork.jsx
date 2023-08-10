@@ -12,7 +12,7 @@ function SocialNetwork() {
             <WorkLayout
                 title="Social Network"
                 description="Le projet 'Social Network' est une application de réseau social permettant aux utilisateurs de se connecter, partager du contenu et interagir entre eux. Cette plateforme vise à fournir une expérience conviviale et sécurisée pour établir des liens avec amis, familles et connaissances."
-                details="Vite React HTML&CSS JavaScript Node.js MySQL Sequelize"
+                details="Vite React HTML&CSS JavaScript Node.js MySQL Sequelize TypeScript"
             >
                 <main className="container works">
                     <div className="stack wrapper gap-10">
