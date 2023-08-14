@@ -19,7 +19,7 @@ function SocialNetwork() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://discover-most-suitable-property.netlify.app/"
+                                href="https://github.com/KaleneDev/Social_network"
                             >
                                 <ZoomOut scale={0.8}>
                                     <img
