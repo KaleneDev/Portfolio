@@ -32,4 +32,4 @@ Ce projet est mon portfolio personnel développé avec React JS pour la partie f
 
 Auteurs
 kalène A PIOU
-Voir le site web : https://porfoliokalene.netlify.app/
+Voir le site web : https://www.kalene-apiou.com/
