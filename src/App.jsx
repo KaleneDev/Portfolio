@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -17,16 +17,24 @@ import "./App.scss";
 
 function App() {
     const redirect = useRef();
+    // const urlDeRedirection = "http://localhost:5173/";
     const urlDeRedirection = "https://www.kalene-apiou.com/";
-    if (window.location.href !== urlDeRedirection) {
-        setTimeout(() => {
-          window.location.href = urlDeRedirection;
-          redirect.current.style.display = "none"
-        redirect.current.style.opacity = "0"
-        document.body.style.overflow = "hidden"
-        }, 1500);
-      }
 
+    useEffect(() => {
+        if (!window.location.href.startsWith(urlDeRedirection)) {
+            setTimeout(() => {
+                window.location.href = urlDeRedirection;
+            }, 1500);
+            if (redirect.current) {
+                redirect.current.style.display = "flex";
+            }
+        } else {
+            if (redirect.current) {
+                console.log("redirect.current", redirect.current);
+                redirect.current.style.display = "none";
+            }
+        }
+    }, []);
     return (
         <>
             <div ref={redirect} className="redirection">
