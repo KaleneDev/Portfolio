@@ -19,7 +19,7 @@ function GymWebsite() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://gym-web-site-v1.netlify.app/"
+                                href="https://www.gym.kalene-apiou.com/"
                             >
                                 <ZoomOut scale={0.8}>
                                     <img
@@ -189,9 +189,9 @@ function GymWebsite() {
                                                 Voir le site :{" "}
                                                 <a
                                                     target="_blank"
-                                                    href="https://gym-web-site-v1.netlify.app/"
+                                                    href="https://www.gym.kalene-apiou.com/"
                                                 >
-                                                    https://gym-web-site-v1.netlify.app/
+                                                    Gym WebSite
                                                 </a>
                                             </p>
                                             <p>

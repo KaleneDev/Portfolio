@@ -19,7 +19,7 @@ function Portfolio() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://porfoliokalene.netlify.app/"
+                                href="https://www.kalene-apiou.com/"
                             >
                                 {/* <ZoomOut scale={0.8}> */}
                                     <img
@@ -235,7 +235,7 @@ function Portfolio() {
                                                 Voir le site :{" "}
                                                 <a
                                                     target="_blank"
-                                                    href="https://porfoliokalene.netlify.app"
+                                                    href="https://www.kalene-apiou.com/"
                                                 >
                                                     https://porfoliokalene.netlify.app
                                                 </a>

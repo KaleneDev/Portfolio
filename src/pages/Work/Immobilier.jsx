@@ -20,7 +20,7 @@ function Slider() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://github.com/KaleneDev/ThemeKalene.git"
+                                href="https://www.immobilier.kalene-apiou.com/"
                             >
                                 <ZoomOut scale={0.8}>
                                     <img
@@ -246,6 +246,15 @@ function Slider() {
                                                     target="_blank"
                                                 >
                                                     GitHub
+                                                </a>
+                                            </p>
+                                            <p>
+                                                Voir le site :{" "}
+                                                <a
+                                                    href="https://www.immobilier.kalene-apiou.com/"
+                                                    target="_blank"
+                                                >
+                                                    Immobilier
                                                 </a>
                                             </p>
                                         </div>

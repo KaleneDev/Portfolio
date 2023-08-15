@@ -21,7 +21,7 @@ function DiscoverMostSuitableProperty() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://discover-most-suitable-property.netlify.app/"
+                                href="https://www.discoverproperty.kalene-apiou.com/"
                             >
                                 <ZoomOut scale={0.8}>
                                     <img
@@ -183,9 +183,9 @@ function DiscoverMostSuitableProperty() {
                                                 Voir le site :{" "}
                                                 <a
                                                     target="_blank"
-                                                    href="https://discover-most-suitable-property.netlify.app/"
+                                                    href="https://www.discoverproperty.kalene-apiou.com/"
                                                 >
-                                                    https://discover-most-suitable-property.netlify.app/
+                                                    Discover Property
                                                 </a>
                                             </p>
                                             <p>

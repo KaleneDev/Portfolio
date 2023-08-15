@@ -19,7 +19,7 @@ function SocialNetwork() {
                         <div className="image">
                             <a
                                 target="_blank"
-                                href="https://github.com/KaleneDev/Social_network"
+                                href="https://www.socialnetwork.kalene-apiou.com/"
                             >
                                 <ZoomOut scale={0.8}>
                                     <img
@@ -432,6 +432,15 @@ function SocialNetwork() {
                                                     target="_blank"
                                                 >
                                                     GitHub
+                                                </a>
+                                            </p>
+                                            <p>
+                                                Voir le projet :{" "}
+                                                <a
+                                                    href="https://www.socialnetwork.kalene-apiou.com/"
+                                                    target="_blank"
+                                                >
+                                                    Social Network
                                                 </a>
                                             </p>
                                         </div>
