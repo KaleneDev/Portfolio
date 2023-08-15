@@ -237,7 +237,7 @@ function Portfolio() {
                                                     target="_blank"
                                                     href="https://www.kalene-apiou.com/"
                                                 >
-                                                    https://porfoliokalene.netlify.app
+                                                    Portfolio
                                                 </a>
                                             </p>
                                             <p>

@@ -306,23 +306,23 @@ function SocialNetwork() {
                                         <div className="stack gap-2">
                                             <h3>Front-end</h3>
                                             <div className="stack gap-2">
-                                                <li>Vite: Frontend Tooling</li>
+                                                <li>Vite : Frontend Tooling</li>
                                                 <li>
-                                                    React: JavaScript library
+                                                    React : JavaScript library
                                                     for building user
                                                     interfaces.
                                                 </li>
                                                 <li>
-                                                    HTML5 and CSS3: Markup and
+                                                    HTML5 and CSS3 : Markup and
                                                     styling of the project.
                                                 </li>
                                                 <li>
-                                                    JavaScript: Logic and
+                                                    JavaScript : Logic and
                                                     interactivity of the
                                                     application.
                                                 </li>
                                                 <li>
-                                                    Webpack: Module bundler for
+                                                    Webpack : Module bundler for
                                                     building the project.
                                                 </li>
                                                 <h3>Back-end</h3>

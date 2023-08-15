@@ -65,7 +65,7 @@ function Hero() {
                         </div>
                     </div>
                 </SlideInFromTop>
-                <SlideInFromBot transform={50}>
+                <SlideInFromBot transform={50} scroll="on">
                     <div className="container-portrait">
                         <img className="portrait" src={portrait} alt="Kalene" />
                     </div>
