@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import portrait from "../assets/portrait_02.jpg";
 import sql from "../assets/logos/sql.png";
-import cv from "../assets/CV_2023-08-03_Kalène_A PIOU (Développeur Web).pdf";
+// import cv from "https://drive.google.com/file/d/1v_yegPLYk7glfIm3G-BUZQexhCr870Xu/view?usp=drive_link";
 import Icon from "./IconT.jsx";
 import {
     SlideInFromRight,
@@ -59,7 +59,11 @@ function Hero() {
                             ))}
                         </div>
                         <div className="container-cv">
-                            <a className="button cv" href={cv} target="_blank">
+                            <a
+                                className="button cv"
+                                href="https://drive.google.com/file/d/1v_yegPLYk7glfIm3G-BUZQexhCr870Xu/view?usp=drive_link"
+                                target="_blank"
+                            >
                                 Télécharger CV <Icon name="arrow-right" />
                             </a>
                         </div>

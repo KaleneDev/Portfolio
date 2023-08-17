@@ -399,10 +399,10 @@ function SocialNetwork() {
                                             <p>
                                                 Voir le site :{" "}
                                                 <a
+                                                    href="https://www.socialnetwork.kalene-apiou.com/"
                                                     target="_blank"
-                                                    href="https://discover-most-suitable-property.netlify.app/"
                                                 >
-                                                    https://discover-most-suitable-property.netlify.app/
+                                                    Social Network
                                                 </a>
                                             </p>
                                         </div>
